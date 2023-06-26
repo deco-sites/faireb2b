@@ -105,6 +105,13 @@
 	</symbol>
 
 
+	<symbol id="ArrowRight" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation" direction="right" fill="none" color="#FFFFFF"><path d="M0.856934 12H23.1426" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17.1426 18L23.1426 12L17.1426 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></symbol>
+
+	<symbol id="ChevronDirectional" focusable="false" viewBox="0 0 12 7" aria-hidden="true" role="presentation" direction="right" fill="none" color="#757575"><path stroke="currentColor" d="M1 6.00005L6 0.994751L11 6.00005"></path></symbol>
+
+	<symbol id="Info" width="12" height="12" viewBox="0 0 9 9" xmlns="https://www.w3.org/2000/svg" color="#333333"><title>CircleInfo</title><path d="M4.5 2.4a.3.3 0 0 0-.3.3v.094a.3.3 0 1 0 .6 0V2.7a.3.3 0 0 0-.3-.3m0 1.2a.3.3 0 0 0-.3.3v2.4a.3.3 0 0 0 .6 0V3.9a.3.3 0 0 0-.3-.3m0 4.8C2.35 8.4.6 6.65.6 4.5S2.35.6 4.5.6s3.9 1.75 3.9 3.9-1.75 3.9-3.9 3.9m0-8.4A4.505 4.505 0 0 0 0 4.5C0 6.982 2.018 9 4.5 9S9 6.982 9 4.5 6.982 0 4.5 0" fill="#000" fill-rule="nonzero"></path></symbol>
+
+	<symbol id="Globo" class="SVGIcon__StyledSvg-sc-6bkwzg-0 gdlDdm" focusable="false" viewBox="0 0 24 24" aria-labelledby="titleAccess-:r10:" role="img" fill="none"><path d="M0.856934 11.9998C0.856934 14.9551 2.03091 17.7893 4.1206 19.879C6.21029 21.9687 9.04452 23.1426 11.9998 23.1426C14.9551 23.1426 17.7893 21.9687 19.879 19.879C21.9687 17.7893 23.1426 14.9551 23.1426 11.9998C23.1426 9.04452 21.9687 6.21029 19.879 4.1206C17.7893 2.03091 14.9551 0.856934 11.9998 0.856934C9.04452 0.856934 6.21029 2.03091 4.1206 4.1206C2.03091 6.21029 0.856934 9.04452 0.856934 11.9998V11.9998Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M0.856934 12H23.1426" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.2853 11.9998C16.0744 16.0746 14.5736 19.9768 11.9996 23.1426C9.42559 19.9768 7.92473 16.0746 7.71387 11.9998C7.92473 7.92503 9.42559 4.0228 11.9996 0.856934C14.5736 4.0228 16.0744 7.92503 16.2853 11.9998Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><title id="titleAccess-:r10:">Global</title></symbol>
 </svg>
 
 
