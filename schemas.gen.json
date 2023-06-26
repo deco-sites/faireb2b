@@ -7752,6 +7752,11 @@
                   },
                   {
                     "type": "string",
+                    "const": "ArrowRight",
+                    "default": "ArrowRight"
+                  },
+                  {
+                    "type": "string",
                     "const": "Bars3",
                     "default": "Bars3"
                   },
@@ -7774,6 +7779,11 @@
                     "type": "string",
                     "const": "ChevronDown",
                     "default": "ChevronDown"
+                  },
+                  {
+                    "type": "string",
+                    "const": "ChevronDirectional",
+                    "default": "ChevronDirectional"
                   },
                   {
                     "type": "string",
@@ -7817,6 +7827,11 @@
                   },
                   {
                     "type": "string",
+                    "const": "Globo",
+                    "default": "Globo"
+                  },
+                  {
+                    "type": "string",
                     "const": "Heart",
                     "default": "Heart"
                   },
@@ -7827,6 +7842,11 @@
                   },
                   {
                     "type": "string",
+                    "const": "Info",
+                    "default": "Info"
+                  },
+                  {
+                    "type": "string",
                     "const": "Linkedin",
                     "default": "Linkedin"
                   },
@@ -7834,6 +7854,16 @@
                     "type": "string",
                     "const": "Logo",
                     "default": "Logo"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Logo320px",
+                    "default": "Logo320px"
+                  },
+                  {
+                    "type": "string",
+                    "const": "LogoInverse",
+                    "default": "LogoInverse"
                   },
                   {
                     "type": "string",
@@ -10105,6 +10135,11 @@
             },
             {
               "type": "string",
+              "const": "ArrowRight",
+              "default": "ArrowRight"
+            },
+            {
+              "type": "string",
               "const": "Bars3",
               "default": "Bars3"
             },
@@ -10127,6 +10162,11 @@
               "type": "string",
               "const": "ChevronDown",
               "default": "ChevronDown"
+            },
+            {
+              "type": "string",
+              "const": "ChevronDirectional",
+              "default": "ChevronDirectional"
             },
             {
               "type": "string",
@@ -10170,6 +10210,11 @@
             },
             {
               "type": "string",
+              "const": "Globo",
+              "default": "Globo"
+            },
+            {
+              "type": "string",
               "const": "Heart",
               "default": "Heart"
             },
@@ -10180,6 +10225,11 @@
             },
             {
               "type": "string",
+              "const": "Info",
+              "default": "Info"
+            },
+            {
+              "type": "string",
               "const": "Linkedin",
               "default": "Linkedin"
             },
@@ -10187,6 +10237,16 @@
               "type": "string",
               "const": "Logo",
               "default": "Logo"
+            },
+            {
+              "type": "string",
+              "const": "Logo320px",
+              "default": "Logo320px"
+            },
+            {
+              "type": "string",
+              "const": "LogoInverse",
+              "default": "LogoInverse"
             },
             {
               "type": "string",
