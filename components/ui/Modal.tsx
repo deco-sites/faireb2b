@@ -19,6 +19,8 @@ export type Props = JSX.IntrinsicElements["dialog"] & {
   mode?: "sidebar-right" | "sidebar-left" | "center";
   onClose?: () => Promise<void> | void;
   loading?: "lazy" | "eager";
+  hideHeader?: boolean;
+  containerClass?: string;
 };
 
 const dialogStyles = {
@@ -46,6 +48,7 @@ const Modal = ({
   onClose,
   children,
   loading,
+  hideHeader,
   ...props
 }: Props) => {
   const lazy = useSignal(false);
@@ -83,9 +86,13 @@ const Modal = ({
         <div
           class={`bg-base-100 flex flex-col max-h-full ${
             containerStyles[mode]
-          }`}
+          } ${props.containerClass ?? ""}`}
         >
-          <header class="flex px-4 py-6 justify-between items-center border-b border-base-200">
+          <header
+            class={`flex px-4 py-6 justify-between items-center border-b border-base-200 ${
+              hideHeader ? `hidden` : ``
+            }`}
+          >
             <div class="flex gap-5 items-center">
               <h1>
                 <span class="font-medium text-2xl">{title}</span>

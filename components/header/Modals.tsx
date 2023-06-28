@@ -29,10 +29,12 @@ function Modals({ menu, searchbar }: Props) {
         title="Menu"
         mode="sidebar-left"
         loading="lazy"
+        hideHeader
         open={displayMenu.value}
         onClose={() => {
           displayMenu.value = false;
         }}
+        containerClass="!w-4/5 !max-w-[460px] min-w-[272px]"
       >
         <Suspense fallback={fallback}>
           <Menu {...menu} />

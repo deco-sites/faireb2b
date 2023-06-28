@@ -1,8 +1,11 @@
 import Icon from "$store/components/ui/Icon.tsx";
 import type { INavItem } from "./NavItem.tsx";
+import type { FeaturedLinks, NavigationDepartamentMobile } from "./Header.tsx";
 
 export interface Props {
   items: INavItem[];
+  featuredLinks: FeaturedLinks[];
+  navDepartamentsMobile: NavigationDepartamentMobile[];
 }
 
 function MenuItem({ item }: { item: INavItem }) {
@@ -26,9 +29,42 @@ function MenuItem({ item }: { item: INavItem }) {
   );
 }
 
-function Menu({ items }: Props) {
+function Menu({ items, featuredLinks }: Props) {
+  const topFeaturedLinks = featuredLinks.filter((item) => item.visible.top);
+
   return (
     <>
+      <div class="flex flex-col bg-primary pt-4 px-5 pb-2">
+        <div class="mb-2 flex self-stretch">
+          <a
+            href="/"
+            class="flex-grow inline-flex items-center mb-1"
+            aria-label="Store logo"
+          >
+            <Icon id="LogoInverse" width={104} height={13} />
+          </a>
+        </div>
+        <ul class="flex flex-col w-full">
+          {topFeaturedLinks.map((item) => (
+            <li
+              class="h-9 flex place-items-center w-full"
+              style={{ order: `${item.position?.mobile}` }}
+            >
+              <a
+                class="flex justify-between text-white text-sm w-full items-center"
+                href={item.link_path}
+              >
+                {item.label}
+                <Icon
+                  id={item.iconRight ?? "ArrowRight"}
+                  width={16}
+                  height={16}
+                />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
       <ul class="px-4 flex-grow flex flex-col divide-y divide-base-200">
         {items.map((item) => (
           <li>

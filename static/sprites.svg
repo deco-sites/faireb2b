@@ -104,8 +104,10 @@
 		<path fill-rule="evenodd" clip-rule="evenodd" d="M40.2424 10.2684L42.6128 21.9066H39.891L39.5396 20.2061H35.7635L35.1501 21.9066H32.0769L36.4663 11.1637C36.642 10.6268 37.1691 10.2684 37.6962 10.2684H40.2424ZM39.0122 17.7887L38.1353 13.4025L36.554 17.7887H39.0122Z"/>
 	</symbol>
 
-
-	<symbol id="ArrowRight" focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation" direction="right" fill="none" color="#FFFFFF"><path d="M0.856934 12H23.1426" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17.1426 18L23.1426 12L17.1426 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></symbol>
+	<symbol class="aSVGIcon__StyledSvg-sc-6bkwzg-0 adLSebk aArrow__DirectionalIcon-sc-1w0vbei-0 afkozkt" viewBox="0 0 24 24" direction="right" fill="none" color="#FFF" id="ArrowRight" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+	<path d="M.857 12h22.286M17.143 18l6-6-6-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
 
 	<symbol id="ChevronDirectional" focusable="false" viewBox="0 0 12 7" aria-hidden="true" role="presentation" direction="right" fill="none" color="#757575"><path stroke="currentColor" d="M1 6.00005L6 0.994751L11 6.00005"></path></symbol>
 
