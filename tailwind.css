@@ -74,6 +74,16 @@
     }
   }
 
+  @keyframes slide-hide-frame {
+    0% {
+      transform: translateX(0)
+    }
+
+    to {
+      transform: translateX(100%)
+    }
+  }
+
   .animate-slide-left {
     animation: slide-left-frame 0.4s ease normal;
   }
@@ -84,6 +94,10 @@
 
   .animate-slide-bottom {
     animation: slide-bottom-frame 0.4s ease normal;
+  }
+  
+  .animate-slide-to-hide {
+    animation: slide-hide-frame 0.4s ease normal;
   }
 }
 
