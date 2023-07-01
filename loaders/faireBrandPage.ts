@@ -11,7 +11,7 @@ async function loader(
 ): Promise<FaireResponse | null> {
   const { slug } = props;
 
-  if(!slug) return null
+  if (!slug) return null;
 
   const fetchData = await fetchAPI<FaireResponse>(
     `https://www.faire.com/brand/${slug}`,
