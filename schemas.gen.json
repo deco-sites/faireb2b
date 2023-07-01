@@ -47,6 +47,7 @@
               "$live/loaders/state.ts",
               "$live/loaders/workflows/events.ts",
               "$live/loaders/workflows/get.ts",
+              "deco-sites/faireb2b/loaders/faireBrandPage.ts",
               "deco-sites/std/loaders/vnda/proxy.ts",
               "deco-sites/std/loaders/vtex/cart.ts",
               "deco-sites/std/loaders/vtex/intelligentSearch/productDetailsPage.ts",
@@ -85,6 +86,7 @@
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
+              "deco-sites/faireb2b/sections/Brand/BrandDetailsPage.tsx",
               "deco-sites/faireb2b/sections/Category/CategoryBanner.tsx",
               "deco-sites/faireb2b/sections/Category/CategoryList.tsx",
               "deco-sites/faireb2b/sections/Content/Benefits.tsx",
@@ -3864,6 +3866,5376 @@
       ],
       "title": "deco-cx/live/loaders/workflows/get.ts@Props"
     },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@OgMetaData": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description"
+        },
+        "has_width": {
+          "type": "boolean",
+          "title": "Has_width"
+        },
+        "has_height": {
+          "type": "boolean",
+          "title": "Has_height"
+        }
+      },
+      "required": [
+        "url",
+        "title",
+        "description",
+        "has_width",
+        "has_height"
+      ],
+      "title": "OgMetaData"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@AppPromotionBannerLinks": {
+      "type": "object",
+      "properties": {
+        "app_store_link": {
+          "type": "string",
+          "title": "App_store_link"
+        },
+        "play_store_link": {
+          "type": "string",
+          "title": "Play_store_link"
+        },
+        "ios_deep_link": {
+          "type": "string",
+          "title": "Ios_deep_link"
+        },
+        "android_deep_link": {
+          "type": "string",
+          "title": "Android_deep_link"
+        }
+      },
+      "required": [
+        "app_store_link",
+        "play_store_link",
+        "ios_deep_link",
+        "android_deep_link"
+      ],
+      "title": "AppPromotionBannerLinks"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@OpeningOrderDiscountData": {
+      "type": "object",
+      "properties": {
+        "is_retailer_eligible": {
+          "type": "boolean",
+          "title": "Is_retailer_eligible"
+        }
+      },
+      "required": [
+        "is_retailer_eligible"
+      ],
+      "title": "OpeningOrderDiscountData"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@NudgeToCheckout": {
+      "type": "object",
+      "properties": {
+        "images": {
+          "type": "array",
+          "items": {},
+          "title": "Images"
+        }
+      },
+      "required": [
+        "images"
+      ],
+      "title": "NudgeToCheckout"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@PromoModalInformation": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "title": "Type"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "title": "PromoModalInformation"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandDiscounts": {
+      "type": "object",
+      "properties": {
+        "brand_discounts": {
+          "title": "Brand_discounts"
+        }
+      },
+      "required": [
+        "brand_discounts"
+      ],
+      "title": "BrandDiscounts"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@DatadogRumConfig": {
+      "type": "object",
+      "properties": {
+        "sample_rate": {
+          "type": "number",
+          "title": "Sample_rate"
+        },
+        "replay_sample_rate": {
+          "type": "number",
+          "title": "Replay_sample_rate"
+        },
+        "client_token": {
+          "type": "string",
+          "title": "Client_token"
+        },
+        "application_id": {
+          "type": "string",
+          "title": "Application_id"
+        },
+        "service": {
+          "type": "string",
+          "title": "Service"
+        },
+        "allowed_tracing_origins": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Allowed_tracing_origins"
+        }
+      },
+      "required": [
+        "sample_rate",
+        "replay_sample_rate",
+        "client_token",
+        "application_id",
+        "service",
+        "allowed_tracing_origins"
+      ],
+      "title": "DatadogRumConfig"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        },
+        "state": {
+          "type": "string",
+          "title": "State"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code",
+        "state"
+      ],
+      "title": "Labels"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Can": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Can"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels2": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Usa": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels2",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Usa"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels3": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels3"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Gbr": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels3",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Gbr"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels4": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels4"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Nld": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels4",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Nld"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels5": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels5"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Dnk": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels5",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Dnk"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels6": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels6"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Deu": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels6",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Deu"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels7": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels7"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Fra": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels7",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Fra"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels8": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels8"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Esp": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels8",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Esp"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels9": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels9"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Ita": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels9",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Ita"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels10": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels10"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Irl": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels10",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Irl"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels11": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels11"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Aut": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels11",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Aut"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels12": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels12"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Bel": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels12",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Bel"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels13": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels13"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Lux": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels13",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Lux"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels14": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels14"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Hkg": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels14",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Hkg"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels15": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels15"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Fin": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels15",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Fin"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels16": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels16"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Nor": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels16",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Nor"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels17": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels17"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Swe": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels17",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Swe"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels18": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels18"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Che": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels18",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Che"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels19": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels19"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Hun": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels19",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Hun"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels20": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels20"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Pol": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels20",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Pol"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels21": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels21"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Cze": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels21",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Cze"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels22": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels22"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Ind": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels22",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Ind"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels23": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels23"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Sgp": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels23",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Sgp"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels24": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels24"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Phl": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels24",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Phl"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels25": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels25"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Prt": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels25",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Prt"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels26": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels26"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Aus": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels26",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Aus"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels27": {
+      "type": "object",
+      "properties": {
+        "address1": {
+          "type": "string",
+          "title": "Address1"
+        },
+        "address2": {
+          "type": "string",
+          "title": "Address2"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "postal_code": {
+          "type": "string",
+          "title": "Postal_code"
+        }
+      },
+      "required": [
+        "address1",
+        "address2",
+        "city",
+        "postal_code"
+      ],
+      "title": "Labels27"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Nzl": {
+      "type": "object",
+      "properties": {
+        "display_format": {
+          "type": "string",
+          "title": "Display_format"
+        },
+        "input_format": {
+          "type": "string",
+          "title": "Input_format"
+        },
+        "postal_code_regex_pattern": {
+          "type": "string",
+          "title": "Postal_code_regex_pattern"
+        },
+        "input_format_for_two_columns": {
+          "type": "string",
+          "title": "Input_format_for_two_columns"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required_fields"
+        },
+        "labels": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Labels27",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "display_format",
+        "input_format",
+        "postal_code_regex_pattern",
+        "input_format_for_two_columns",
+        "required_fields",
+        "labels"
+      ],
+      "title": "Nzl"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Schemas": {
+      "type": "object",
+      "properties": {
+        "CAN": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Can",
+          "title": " C A N"
+        },
+        "USA": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Usa",
+          "title": " U S A"
+        },
+        "GBR": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Gbr",
+          "title": " G B R"
+        },
+        "NLD": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Nld",
+          "title": " N L D"
+        },
+        "DNK": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Dnk",
+          "title": " D N K"
+        },
+        "DEU": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Deu",
+          "title": " D E U"
+        },
+        "FRA": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Fra",
+          "title": " F R A"
+        },
+        "ESP": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Esp",
+          "title": " E S P"
+        },
+        "ITA": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Ita",
+          "title": " I T A"
+        },
+        "IRL": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Irl",
+          "title": " I R L"
+        },
+        "AUT": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Aut",
+          "title": " A U T"
+        },
+        "BEL": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Bel",
+          "title": " B E L"
+        },
+        "LUX": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Lux",
+          "title": " L U X"
+        },
+        "HKG": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Hkg",
+          "title": " H K G"
+        },
+        "FIN": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Fin",
+          "title": " F I N"
+        },
+        "NOR": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Nor",
+          "title": " N O R"
+        },
+        "SWE": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Swe",
+          "title": " S W E"
+        },
+        "CHE": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Che",
+          "title": " C H E"
+        },
+        "HUN": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Hun",
+          "title": " H U N"
+        },
+        "POL": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Pol",
+          "title": " P O L"
+        },
+        "CZE": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Cze",
+          "title": " C Z E"
+        },
+        "IND": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Ind",
+          "title": " I N D"
+        },
+        "SGP": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Sgp",
+          "title": " S G P"
+        },
+        "PHL": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Phl",
+          "title": " P H L"
+        },
+        "PRT": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Prt",
+          "title": " P R T"
+        },
+        "AUS": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Aus",
+          "title": " A U S"
+        },
+        "NZL": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Nzl",
+          "title": " N Z L"
+        }
+      },
+      "required": [
+        "CAN",
+        "USA",
+        "GBR",
+        "NLD",
+        "DNK",
+        "DEU",
+        "FRA",
+        "ESP",
+        "ITA",
+        "IRL",
+        "AUT",
+        "BEL",
+        "LUX",
+        "HKG",
+        "FIN",
+        "NOR",
+        "SWE",
+        "CHE",
+        "HUN",
+        "POL",
+        "CZE",
+        "IND",
+        "SGP",
+        "PHL",
+        "PRT",
+        "AUS",
+        "NZL"
+      ],
+      "title": "Schemas"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@AddressSchemaMap": {
+      "type": "object",
+      "properties": {
+        "schemas": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Schemas",
+          "title": "Schemas"
+        }
+      },
+      "required": [
+        "schemas"
+      ],
+      "title": "AddressSchemaMap"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@LocaleKey": {
+      "type": "object",
+      "properties": {
+        "language": {
+          "type": "string",
+          "title": "Language"
+        }
+      },
+      "required": [
+        "language"
+      ],
+      "title": "LocaleKey"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@StoryImage": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "title": "Token"
+        },
+        "width": {
+          "type": "number",
+          "title": "Width"
+        },
+        "height": {
+          "type": "number",
+          "title": "Height"
+        },
+        "sequence": {
+          "type": "number",
+          "title": "Sequence"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {},
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "token",
+        "width",
+        "height",
+        "sequence",
+        "url",
+        "tags"
+      ],
+      "title": "StoryImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@SquaredImage": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "title": "Token"
+        },
+        "width": {
+          "type": "number",
+          "title": "Width"
+        },
+        "height": {
+          "type": "number",
+          "title": "Height"
+        },
+        "sequence": {
+          "type": "number",
+          "title": "Sequence"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "token",
+        "width",
+        "height",
+        "sequence",
+        "url",
+        "tags"
+      ],
+      "title": "SquaredImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ReviewCountByRating": {
+      "type": "object",
+      "properties": {
+        "5": {
+          "type": "number",
+          "title": "5"
+        }
+      },
+      "required": [
+        "5"
+      ],
+      "title": "ReviewCountByRating"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ReviewPercentageByRating": {
+      "type": "object",
+      "properties": {
+        "5": {
+          "type": "number",
+          "title": "5"
+        }
+      },
+      "required": [
+        "5"
+      ],
+      "title": "ReviewPercentageByRating"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandReviewsSummary": {
+      "type": "object",
+      "properties": {
+        "average_rating": {
+          "type": "number",
+          "title": "Average_rating"
+        },
+        "number_of_reviews": {
+          "type": "number",
+          "title": "Number_of_reviews"
+        },
+        "review_count_by_rating": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ReviewCountByRating",
+          "title": "Review_count_by_rating"
+        },
+        "review_percentage_by_rating": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ReviewPercentageByRating",
+          "title": "Review_percentage_by_rating"
+        }
+      },
+      "required": [
+        "average_rating",
+        "number_of_reviews",
+        "review_count_by_rating",
+        "review_percentage_by_rating"
+      ],
+      "title": "BrandReviewsSummary"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BannerImage": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "title": "Token"
+        },
+        "width": {
+          "type": "number",
+          "title": "Width"
+        },
+        "height": {
+          "type": "number",
+          "title": "Height"
+        },
+        "sequence": {
+          "type": "number",
+          "title": "Sequence"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "token",
+        "width",
+        "height",
+        "sequence",
+        "url",
+        "tags"
+      ],
+      "title": "BannerImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ProfileImage": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "title": "Token"
+        },
+        "width": {
+          "type": "number",
+          "title": "Width"
+        },
+        "height": {
+          "type": "number",
+          "title": "Height"
+        },
+        "sequence": {
+          "type": "number",
+          "title": "Sequence"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {},
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "token",
+        "width",
+        "height",
+        "sequence",
+        "url",
+        "tags"
+      ],
+      "title": "ProfileImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@LogoImage": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "title": "Token"
+        },
+        "width": {
+          "type": "number",
+          "title": "Width"
+        },
+        "height": {
+          "type": "number",
+          "title": "Height"
+        },
+        "sequence": {
+          "type": "number",
+          "title": "Sequence"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "token",
+        "width",
+        "height",
+        "sequence",
+        "url",
+        "tags"
+      ],
+      "title": "LogoImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MinimumOrderAmount": {
+      "type": "object",
+      "properties": {
+        "amount_cents": {
+          "type": "number",
+          "title": "Amount_cents"
+        },
+        "currency": {
+          "type": "string",
+          "title": "Currency"
+        }
+      },
+      "required": [
+        "amount_cents",
+        "currency"
+      ],
+      "title": "MinimumOrderAmount"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@FirstOrderMinimumAmount": {
+      "type": "object",
+      "properties": {
+        "amount_cents": {
+          "type": "number",
+          "title": "Amount_cents"
+        },
+        "currency": {
+          "type": "string",
+          "title": "Currency"
+        }
+      },
+      "required": [
+        "amount_cents",
+        "currency"
+      ],
+      "title": "FirstOrderMinimumAmount"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ReorderMinimumAmount": {
+      "type": "object",
+      "properties": {
+        "amount_cents": {
+          "type": "number",
+          "title": "Amount_cents"
+        },
+        "currency": {
+          "type": "string",
+          "title": "Currency"
+        }
+      },
+      "required": [
+        "amount_cents",
+        "currency"
+      ],
+      "title": "ReorderMinimumAmount"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@FirstOrderReturnsLimit": {
+      "type": "object",
+      "properties": {
+        "amount_cents": {
+          "type": "number",
+          "title": "Amount_cents"
+        },
+        "currency": {
+          "type": "string",
+          "title": "Currency"
+        }
+      },
+      "required": [
+        "amount_cents",
+        "currency"
+      ],
+      "title": "FirstOrderReturnsLimit"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Tag": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "title": "Token"
+        },
+        "tag": {
+          "type": "string",
+          "title": "Tag"
+        },
+        "tag_type": {
+          "type": "string",
+          "title": "Tag_type"
+        },
+        "tag_definition": {
+          "type": "string",
+          "title": "Tag_definition"
+        }
+      },
+      "required": [
+        "token",
+        "tag",
+        "tag_type",
+        "tag_definition"
+      ],
+      "title": "Tag"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Tag[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Tag"
+      },
+      "title": "Tag[]"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Brand": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "title": "Token"
+        },
+        "token_alias": {
+          "type": "string",
+          "title": "Token_alias"
+        },
+        "is_internal": {
+          "type": "boolean",
+          "title": "Is_internal"
+        },
+        "active": {
+          "type": "boolean",
+          "title": "Active"
+        },
+        "owner_user_token": {
+          "type": "string",
+          "title": "Owner_user_token"
+        },
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "short_description": {
+          "type": "string",
+          "title": "Short_description"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "instagram_handle": {
+          "type": "string",
+          "title": "Instagram_handle"
+        },
+        "minimum_order_amount_cents": {
+          "type": "number",
+          "title": "Minimum_order_amount_cents"
+        },
+        "first_order_minimum_amount_cents": {
+          "type": "number",
+          "title": "First_order_minimum_amount_cents"
+        },
+        "reorder_minimum_amount_cents": {
+          "type": "number",
+          "title": "Reorder_minimum_amount_cents"
+        },
+        "made_in": {
+          "type": "string",
+          "title": "Made_in"
+        },
+        "based_in": {
+          "type": "string",
+          "title": "Based_in"
+        },
+        "based_in_city": {
+          "type": "string",
+          "title": "Based_in_city"
+        },
+        "ships_from_country": {
+          "type": "string",
+          "title": "Ships_from_country"
+        },
+        "is_eligible_for_insider_subsidy": {
+          "type": "boolean",
+          "title": "Is_eligible_for_insider_subsidy"
+        },
+        "eco_friendly": {
+          "type": "boolean",
+          "title": "Eco_friendly"
+        },
+        "charitable": {
+          "type": "boolean",
+          "title": "Charitable"
+        },
+        "hand_made": {
+          "type": "boolean",
+          "title": "Hand_made"
+        },
+        "women_owned": {
+          "type": "boolean",
+          "title": "Women_owned"
+        },
+        "organic": {
+          "type": "boolean",
+          "title": "Organic"
+        },
+        "small_batch": {
+          "type": "boolean",
+          "title": "Small_batch"
+        },
+        "sold_on_amazon": {
+          "type": "boolean",
+          "title": "Sold_on_amazon"
+        },
+        "story_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@StoryImage",
+          "title": "Story_image"
+        },
+        "lead_time_days": {
+          "type": "number",
+          "title": "Lead_time_days"
+        },
+        "lower_bound_lead_time_days": {
+          "type": "number",
+          "title": "Lower_bound_lead_time_days"
+        },
+        "upper_bound_lead_time_days": {
+          "type": "number",
+          "title": "Upper_bound_lead_time_days"
+        },
+        "creation_year": {
+          "type": "number",
+          "title": "Creation_year"
+        },
+        "squared_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@SquaredImage",
+          "title": "Squared_image"
+        },
+        "accepted_terms": {
+          "type": "boolean",
+          "title": "Accepted_terms"
+        },
+        "hide_chat": {
+          "type": "boolean",
+          "title": "Hide_chat"
+        },
+        "forbids_online_only_retailers": {
+          "type": "boolean",
+          "title": "Forbids_online_only_retailers"
+        },
+        "forbids_social_media_only_retailers": {
+          "type": "boolean",
+          "title": "Forbids_social_media_only_retailers"
+        },
+        "is_first_order": {
+          "type": "boolean",
+          "title": "Is_first_order"
+        },
+        "first_order_returns_limit_cents": {
+          "type": "number",
+          "title": "First_order_returns_limit_cents"
+        },
+        "zip_code_protection_enabled": {
+          "type": "boolean",
+          "title": "Zip_code_protection_enabled"
+        },
+        "first_active_at": {
+          "type": "number",
+          "title": "First_active_at"
+        },
+        "active_products_count": {
+          "type": "number",
+          "title": "Active_products_count"
+        },
+        "last_product_added_at": {
+          "type": "number",
+          "title": "Last_product_added_at"
+        },
+        "has_new_products": {
+          "type": "boolean",
+          "title": "Has_new_products"
+        },
+        "elevate_commission_bps": {
+          "type": "number",
+          "title": "Elevate_commission_bps"
+        },
+        "allows_scheduled_orders": {
+          "type": "boolean",
+          "title": "Allows_scheduled_orders"
+        },
+        "is_new": {
+          "type": "boolean",
+          "title": "Is_new"
+        },
+        "override_lead_time_estimates": {
+          "type": "boolean",
+          "title": "Override_lead_time_estimates"
+        },
+        "federal_tax_info_needed": {
+          "type": "boolean",
+          "title": "Federal_tax_info_needed"
+        },
+        "no_consumer_resale": {
+          "type": "boolean",
+          "title": "No_consumer_resale"
+        },
+        "accepts_returns": {
+          "type": "boolean",
+          "title": "Accepts_returns"
+        },
+        "return_orders_discount_bps": {
+          "type": "number",
+          "title": "Return_orders_discount_bps"
+        },
+        "brand_reviews_summary": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandReviewsSummary",
+          "title": "Brand_reviews_summary"
+        },
+        "version": {
+          "type": "number",
+          "title": "Version"
+        },
+        "created_at": {
+          "type": "number",
+          "title": "Created_at"
+        },
+        "shipping_label_printing_preference": {
+          "type": "string",
+          "title": "Shipping_label_printing_preference"
+        },
+        "state": {
+          "type": "string",
+          "title": "State"
+        },
+        "owner_first_name": {
+          "type": "string",
+          "title": "Owner_first_name"
+        },
+        "banner_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BannerImage",
+          "title": "Banner_image"
+        },
+        "profile_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ProfileImage",
+          "title": "Profile_image"
+        },
+        "selected_for_international_best_sellers": {
+          "type": "boolean",
+          "title": "Selected_for_international_best_sellers"
+        },
+        "purchase_order_brand_type": {
+          "type": "string",
+          "title": "Purchase_order_brand_type"
+        },
+        "force_enable_faire_direct": {
+          "type": "boolean",
+          "title": "Force_enable_faire_direct"
+        },
+        "enable_pre_packs": {
+          "type": "boolean",
+          "title": "Enable_pre_packs"
+        },
+        "logo_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@LogoImage",
+          "title": "Logo_image"
+        },
+        "minimum_order_amount": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MinimumOrderAmount",
+          "title": "Minimum_order_amount"
+        },
+        "first_order_minimum_amount": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@FirstOrderMinimumAmount",
+          "title": "First_order_minimum_amount"
+        },
+        "reorder_minimum_amount": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ReorderMinimumAmount",
+          "title": "Reorder_minimum_amount"
+        },
+        "first_order_returns_limit": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@FirstOrderReturnsLimit",
+          "title": "First_order_returns_limit"
+        },
+        "live_streaming_enabled": {
+          "type": "boolean",
+          "title": "Live_streaming_enabled"
+        },
+        "guaranteed_volume_status": {
+          "type": "string",
+          "title": "Guaranteed_volume_status"
+        },
+        "has_samples": {
+          "type": "boolean",
+          "title": "Has_samples"
+        },
+        "estimated_ship_date_formatted": {
+          "type": "string",
+          "title": "Estimated_ship_date_formatted"
+        },
+        "primary_category": {
+          "type": "string",
+          "title": "Primary_category"
+        },
+        "is_apparel": {
+          "type": "boolean",
+          "title": "Is_apparel"
+        },
+        "faire_winter_market_apparel_preorder_special_eligibility": {
+          "type": "boolean",
+          "title": "Faire_winter_market_apparel_preorder_special_eligibility"
+        },
+        "original_locale_id": {
+          "type": "string",
+          "title": "Original_locale_id"
+        },
+        "currency": {
+          "type": "string",
+          "title": "Currency"
+        },
+        "shop_currency": {
+          "type": "string",
+          "title": "Shop_currency"
+        },
+        "is_highlighted_brand_for_promotional_event": {
+          "type": "boolean",
+          "title": "Is_highlighted_brand_for_promotional_event"
+        },
+        "size_segment": {
+          "type": "string",
+          "title": "Size_segment"
+        },
+        "is_top_shop": {
+          "type": "boolean",
+          "title": "Is_top_shop"
+        },
+        "tax_form_preference": {
+          "type": "string",
+          "title": "Tax_form_preference"
+        },
+        "is_mid_price_point_plus": {
+          "type": "boolean",
+          "title": "Is_mid_price_point_plus"
+        },
+        "categories": {
+          "type": "array",
+          "items": {},
+          "title": "Categories"
+        },
+        "deranked_categories": {
+          "type": "array",
+          "items": {},
+          "title": "Deranked_categories"
+        },
+        "images": {
+          "type": "array",
+          "items": {},
+          "title": "Images"
+        },
+        "social_media_images": {
+          "type": "array",
+          "items": {},
+          "title": "Social_media_images"
+        },
+        "badges": {
+          "type": "array",
+          "items": {},
+          "title": "Badges"
+        },
+        "squared_category_images": {
+          "title": "Squared_category_images"
+        },
+        "ship_from_addresses": {
+          "type": "array",
+          "items": {},
+          "title": "Ship_from_addresses"
+        },
+        "available_terms": {
+          "type": "array",
+          "items": {},
+          "title": "Available_terms"
+        },
+        "restricted_states": {
+          "type": "array",
+          "items": {},
+          "title": "Restricted_states"
+        },
+        "forbidden_states": {
+          "type": "array",
+          "items": {},
+          "title": "Forbidden_states"
+        },
+        "reduced_commission_states": {
+          "type": "array",
+          "items": {},
+          "title": "Reduced_commission_states"
+        },
+        "restricted_countries": {
+          "type": "array",
+          "items": {},
+          "title": "Restricted_countries"
+        },
+        "restricted_geo_constraints": {
+          "type": "array",
+          "items": {},
+          "title": "Restricted_geo_constraints"
+        },
+        "memberships": {
+          "type": "array",
+          "items": {},
+          "title": "Memberships"
+        },
+        "story_images": {
+          "type": "array",
+          "items": {},
+          "title": "Story_images"
+        },
+        "active_brand_promos": {
+          "type": "array",
+          "items": {},
+          "title": "Active_brand_promos"
+        },
+        "active_promo_collections": {
+          "type": "array",
+          "items": {},
+          "title": "Active_promo_collections"
+        },
+        "order_minimum_overrides": {
+          "type": "array",
+          "items": {},
+          "title": "Order_minimum_overrides"
+        },
+        "minimums": {
+          "type": "array",
+          "items": {},
+          "title": "Minimums"
+        },
+        "certifications": {
+          "type": "array",
+          "items": {},
+          "title": "Certifications"
+        },
+        "business_identifiers": {
+          "type": "array",
+          "items": {},
+          "title": "Business_identifiers"
+        },
+        "tags": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Tag[]",
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "token",
+        "token_alias",
+        "is_internal",
+        "active",
+        "owner_user_token",
+        "name",
+        "short_description",
+        "description",
+        "url",
+        "instagram_handle",
+        "minimum_order_amount_cents",
+        "first_order_minimum_amount_cents",
+        "reorder_minimum_amount_cents",
+        "made_in",
+        "based_in",
+        "based_in_city",
+        "ships_from_country",
+        "is_eligible_for_insider_subsidy",
+        "eco_friendly",
+        "charitable",
+        "hand_made",
+        "women_owned",
+        "organic",
+        "small_batch",
+        "sold_on_amazon",
+        "story_image",
+        "lead_time_days",
+        "lower_bound_lead_time_days",
+        "upper_bound_lead_time_days",
+        "creation_year",
+        "squared_image",
+        "accepted_terms",
+        "hide_chat",
+        "forbids_online_only_retailers",
+        "forbids_social_media_only_retailers",
+        "is_first_order",
+        "first_order_returns_limit_cents",
+        "zip_code_protection_enabled",
+        "first_active_at",
+        "active_products_count",
+        "last_product_added_at",
+        "has_new_products",
+        "elevate_commission_bps",
+        "allows_scheduled_orders",
+        "is_new",
+        "override_lead_time_estimates",
+        "federal_tax_info_needed",
+        "no_consumer_resale",
+        "accepts_returns",
+        "return_orders_discount_bps",
+        "brand_reviews_summary",
+        "version",
+        "created_at",
+        "shipping_label_printing_preference",
+        "state",
+        "owner_first_name",
+        "banner_image",
+        "profile_image",
+        "selected_for_international_best_sellers",
+        "purchase_order_brand_type",
+        "force_enable_faire_direct",
+        "enable_pre_packs",
+        "logo_image",
+        "minimum_order_amount",
+        "first_order_minimum_amount",
+        "reorder_minimum_amount",
+        "first_order_returns_limit",
+        "live_streaming_enabled",
+        "guaranteed_volume_status",
+        "has_samples",
+        "estimated_ship_date_formatted",
+        "primary_category",
+        "is_apparel",
+        "faire_winter_market_apparel_preorder_special_eligibility",
+        "original_locale_id",
+        "currency",
+        "shop_currency",
+        "is_highlighted_brand_for_promotional_event",
+        "size_segment",
+        "is_top_shop",
+        "tax_form_preference",
+        "is_mid_price_point_plus",
+        "categories",
+        "deranked_categories",
+        "images",
+        "social_media_images",
+        "badges",
+        "squared_category_images",
+        "ship_from_addresses",
+        "available_terms",
+        "restricted_states",
+        "forbidden_states",
+        "reduced_commission_states",
+        "restricted_countries",
+        "restricted_geo_constraints",
+        "memberships",
+        "story_images",
+        "active_brand_promos",
+        "active_promo_collections",
+        "order_minimum_overrides",
+        "minimums",
+        "certifications",
+        "business_identifiers",
+        "tags"
+      ],
+      "title": "Brand"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ShopPreferences": {
+      "type": "object",
+      "properties": {
+        "still_fulfilling": {
+          "type": "boolean",
+          "title": "Still_fulfilling"
+        }
+      },
+      "required": [
+        "still_fulfilling"
+      ],
+      "title": "ShopPreferences"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandVideoPaginationData": {
+      "type": "object",
+      "properties": {
+        "page_number": {
+          "type": "number",
+          "title": "Page_number"
+        },
+        "page_size": {
+          "type": "number",
+          "title": "Page_size"
+        },
+        "page_count": {
+          "type": "number",
+          "title": "Page_count"
+        },
+        "total_results": {
+          "type": "number",
+          "title": "Total_results"
+        }
+      },
+      "required": [
+        "page_number",
+        "page_size",
+        "page_count",
+        "total_results"
+      ],
+      "title": "BrandVideoPaginationData"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandSampleProgram": {
+      "type": "object",
+      "properties": {
+        "is_samples_enabled_for_session": {
+          "type": "boolean",
+          "title": "Is_samples_enabled_for_session"
+        },
+        "is_pilot_group": {
+          "type": "boolean",
+          "title": "Is_pilot_group"
+        }
+      },
+      "required": [
+        "is_samples_enabled_for_session",
+        "is_pilot_group"
+      ],
+      "title": "BrandSampleProgram"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandLocationInfo": {
+      "type": "object",
+      "properties": {
+        "ships_from_country_display_name": {
+          "type": "string",
+          "title": "Ships_from_country_display_name"
+        },
+        "made_in_country_display_name": {
+          "type": "string",
+          "title": "Made_in_country_display_name"
+        }
+      },
+      "required": [
+        "ships_from_country_display_name",
+        "made_in_country_display_name"
+      ],
+      "title": "BrandLocationInfo"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@InfoText": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "text_color": {
+          "type": "string",
+          "title": "Text_color"
+        },
+        "style": {
+          "type": "string",
+          "title": "Style"
+        },
+        "type": {
+          "type": "string",
+          "title": "Type"
+        },
+        "tooltip": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Tooltip"
+        }
+      },
+      "required": [
+        "text",
+        "text_color",
+        "style",
+        "type"
+      ],
+      "title": "InfoText"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@InfoText[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@InfoText"
+      },
+      "title": "InfoText[]"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandView": {
+      "type": "object",
+      "properties": {
+        "brand": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Brand",
+          "title": "Brand"
+        },
+        "shop_preferences": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ShopPreferences",
+          "title": "Shop_preferences"
+        },
+        "faire_winter_market_apparel_preorder_special_eligibility": {
+          "type": "boolean",
+          "title": "Faire_winter_market_apparel_preorder_special_eligibility"
+        },
+        "brand_video_pagination_data": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandVideoPaginationData",
+          "title": "Brand_video_pagination_data"
+        },
+        "eligible_for_uk_eu_brands_free_shipping": {
+          "type": "boolean",
+          "title": "Eligible_for_uk_eu_brands_free_shipping"
+        },
+        "import_shipment_info": {
+          "type": "string",
+          "title": "Import_shipment_info"
+        },
+        "is_non_returnable_partner_brand": {
+          "type": "boolean",
+          "title": "Is_non_returnable_partner_brand"
+        },
+        "has_insider_free_duties": {
+          "type": "boolean",
+          "title": "Has_insider_free_duties"
+        },
+        "is_showroom_brand": {
+          "type": "boolean",
+          "title": "Is_showroom_brand"
+        },
+        "brand_sample_program": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandSampleProgram",
+          "title": "Brand_sample_program"
+        },
+        "learn_more_brand_tags_help_center_link": {
+          "type": "string",
+          "title": "Learn_more_brand_tags_help_center_link"
+        },
+        "learn_more_brand_tags_copy": {
+          "type": "string",
+          "title": "Learn_more_brand_tags_copy"
+        },
+        "has_current_or_upcoming_market_promotion": {
+          "type": "boolean",
+          "title": "Has_current_or_upcoming_market_promotion"
+        },
+        "show_optimized_brand_page_copy": {
+          "type": "boolean",
+          "title": "Show_optimized_brand_page_copy"
+        },
+        "brand_location_info": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandLocationInfo",
+          "title": "Brand_location_info"
+        },
+        "brand_social_media_info": {
+          "title": "Brand_social_media_info"
+        },
+        "banners": {
+          "type": "array",
+          "items": {},
+          "title": "Banners"
+        },
+        "related_search_terms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Related_search_terms"
+        },
+        "brand_videos": {
+          "type": "array",
+          "items": {},
+          "title": "Brand_videos"
+        },
+        "active_season_years": {
+          "type": "array",
+          "items": {},
+          "title": "Active_season_years"
+        },
+        "info_texts": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@InfoText[]",
+          "title": "Info_texts"
+        },
+        "faire_funded_promo": {
+          "type": "array",
+          "items": {},
+          "title": "Faire_funded_promo"
+        },
+        "highlighted_apparel_seasons_for_promotional_event": {
+          "type": "array",
+          "items": {},
+          "title": "Highlighted_apparel_seasons_for_promotional_event"
+        },
+        "promo_display_texts": {
+          "type": "array",
+          "items": {},
+          "title": "Promo_display_texts"
+        }
+      },
+      "required": [
+        "brand",
+        "shop_preferences",
+        "faire_winter_market_apparel_preorder_special_eligibility",
+        "brand_video_pagination_data",
+        "eligible_for_uk_eu_brands_free_shipping",
+        "import_shipment_info",
+        "is_non_returnable_partner_brand",
+        "has_insider_free_duties",
+        "is_showroom_brand",
+        "brand_sample_program",
+        "learn_more_brand_tags_help_center_link",
+        "learn_more_brand_tags_copy",
+        "has_current_or_upcoming_market_promotion",
+        "show_optimized_brand_page_copy",
+        "brand_location_info",
+        "brand_social_media_info",
+        "banners",
+        "related_search_terms",
+        "brand_videos",
+        "active_season_years",
+        "info_texts",
+        "faire_funded_promo",
+        "highlighted_apparel_seasons_for_promotional_event",
+        "promo_display_texts"
+      ],
+      "title": "BrandView"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ProfileImage2": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "title": "Token"
+        },
+        "width": {
+          "type": "number",
+          "title": "Width"
+        },
+        "height": {
+          "type": "number",
+          "title": "Height"
+        },
+        "sequence": {
+          "type": "number",
+          "title": "Sequence"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {},
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "token",
+        "width",
+        "height",
+        "sequence",
+        "url",
+        "tags"
+      ],
+      "title": "ProfileImage2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@SquaredImage2": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "title": "Token"
+        },
+        "width": {
+          "type": "number",
+          "title": "Width"
+        },
+        "height": {
+          "type": "number",
+          "title": "Height"
+        },
+        "sequence": {
+          "type": "number",
+          "title": "Sequence"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "token",
+        "width",
+        "height",
+        "sequence",
+        "url",
+        "tags"
+      ],
+      "title": "SquaredImage2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MinimumOrderAmount2": {
+      "type": "object",
+      "properties": {
+        "amount_cents": {
+          "type": "number",
+          "title": "Amount_cents"
+        },
+        "currency": {
+          "type": "string",
+          "title": "Currency"
+        }
+      },
+      "required": [
+        "amount_cents",
+        "currency"
+      ],
+      "title": "MinimumOrderAmount2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@FirstOrderMinimumAmount2": {
+      "type": "object",
+      "properties": {
+        "amount_cents": {
+          "type": "number",
+          "title": "Amount_cents"
+        },
+        "currency": {
+          "type": "string",
+          "title": "Currency"
+        }
+      },
+      "required": [
+        "amount_cents",
+        "currency"
+      ],
+      "title": "FirstOrderMinimumAmount2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ReorderMinimumAmount2": {
+      "type": "object",
+      "properties": {
+        "amount_cents": {
+          "type": "number",
+          "title": "Amount_cents"
+        },
+        "currency": {
+          "type": "string",
+          "title": "Currency"
+        }
+      },
+      "required": [
+        "amount_cents",
+        "currency"
+      ],
+      "title": "ReorderMinimumAmount2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BannerImage2": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "title": "Token"
+        },
+        "width": {
+          "type": "number",
+          "title": "Width"
+        },
+        "height": {
+          "type": "number",
+          "title": "Height"
+        },
+        "sequence": {
+          "type": "number",
+          "title": "Sequence"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "token",
+        "width",
+        "height",
+        "sequence",
+        "url",
+        "tags"
+      ],
+      "title": "BannerImage2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ReviewCountByRating2": {
+      "type": "object",
+      "properties": {
+        "5": {
+          "type": "number",
+          "title": "5"
+        }
+      },
+      "required": [
+        "5"
+      ],
+      "title": "ReviewCountByRating2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ReviewPercentageByRating2": {
+      "type": "object",
+      "properties": {
+        "5": {
+          "type": "number",
+          "title": "5"
+        }
+      },
+      "required": [
+        "5"
+      ],
+      "title": "ReviewPercentageByRating2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandReviewsSummary2": {
+      "type": "object",
+      "properties": {
+        "average_rating": {
+          "type": "number",
+          "title": "Average_rating"
+        },
+        "number_of_reviews": {
+          "type": "number",
+          "title": "Number_of_reviews"
+        },
+        "review_count_by_rating": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ReviewCountByRating2",
+          "title": "Review_count_by_rating"
+        },
+        "review_percentage_by_rating": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ReviewPercentageByRating2",
+          "title": "Review_percentage_by_rating"
+        }
+      },
+      "required": [
+        "average_rating",
+        "number_of_reviews",
+        "review_count_by_rating",
+        "review_percentage_by_rating"
+      ],
+      "title": "BrandReviewsSummary2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Tag2": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "title": "Token"
+        },
+        "tag": {
+          "type": "string",
+          "title": "Tag"
+        },
+        "tag_type": {
+          "type": "string",
+          "title": "Tag_type"
+        },
+        "tag_definition": {
+          "type": "string",
+          "title": "Tag_definition"
+        }
+      },
+      "required": [
+        "token",
+        "tag",
+        "tag_type",
+        "tag_definition"
+      ],
+      "title": "Tag2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Tag2[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Tag2"
+      },
+      "title": "Tag2[]"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Brand2": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string",
+          "title": "Token"
+        },
+        "active": {
+          "type": "boolean",
+          "title": "Active"
+        },
+        "is_new": {
+          "type": "boolean",
+          "title": "Is_new"
+        },
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "profile_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ProfileImage2",
+          "title": "Profile_image"
+        },
+        "squared_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@SquaredImage2",
+          "title": "Squared_image"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description"
+        },
+        "is_internal": {
+          "type": "boolean",
+          "title": "Is_internal"
+        },
+        "has_samples": {
+          "type": "boolean",
+          "title": "Has_samples"
+        },
+        "is_top_shop": {
+          "type": "boolean",
+          "title": "Is_top_shop"
+        },
+        "based_in": {
+          "type": "string",
+          "title": "Based_in"
+        },
+        "based_in_city": {
+          "type": "string",
+          "title": "Based_in_city"
+        },
+        "ships_from_country": {
+          "type": "string",
+          "title": "Ships_from_country"
+        },
+        "hide_chat": {
+          "type": "boolean",
+          "title": "Hide_chat"
+        },
+        "primary_category": {
+          "type": "string",
+          "title": "Primary_category"
+        },
+        "is_highlighted_brand_for_promotional_event": {
+          "type": "boolean",
+          "title": "Is_highlighted_brand_for_promotional_event"
+        },
+        "made_in": {
+          "type": "string",
+          "title": "Made_in"
+        },
+        "sold_on_amazon": {
+          "type": "boolean",
+          "title": "Sold_on_amazon"
+        },
+        "eco_friendly": {
+          "type": "boolean",
+          "title": "Eco_friendly"
+        },
+        "hand_made": {
+          "type": "boolean",
+          "title": "Hand_made"
+        },
+        "charitable": {
+          "type": "boolean",
+          "title": "Charitable"
+        },
+        "organic": {
+          "type": "boolean",
+          "title": "Organic"
+        },
+        "women_owned": {
+          "type": "boolean",
+          "title": "Women_owned"
+        },
+        "small_batch": {
+          "type": "boolean",
+          "title": "Small_batch"
+        },
+        "minimum_order_amount": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MinimumOrderAmount2",
+          "title": "Minimum_order_amount"
+        },
+        "first_order_minimum_amount": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@FirstOrderMinimumAmount2",
+          "title": "First_order_minimum_amount"
+        },
+        "reorder_minimum_amount": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ReorderMinimumAmount2",
+          "title": "Reorder_minimum_amount"
+        },
+        "lead_time_days": {
+          "type": "number",
+          "title": "Lead_time_days"
+        },
+        "upper_bound_lead_time_days": {
+          "type": "number",
+          "title": "Upper_bound_lead_time_days"
+        },
+        "lower_bound_lead_time_days": {
+          "type": "number",
+          "title": "Lower_bound_lead_time_days"
+        },
+        "estimated_ship_date_formatted": {
+          "type": "string",
+          "title": "Estimated_ship_date_formatted"
+        },
+        "zip_code_protection_enabled": {
+          "type": "boolean",
+          "title": "Zip_code_protection_enabled"
+        },
+        "is_first_order": {
+          "type": "boolean",
+          "title": "Is_first_order"
+        },
+        "banner_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BannerImage2",
+          "title": "Banner_image"
+        },
+        "owner_first_name": {
+          "type": "string",
+          "title": "Owner_first_name"
+        },
+        "creation_year": {
+          "type": "number",
+          "title": "Creation_year"
+        },
+        "instagram_handle": {
+          "type": "string",
+          "title": "Instagram_handle"
+        },
+        "brand_reviews_summary": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandReviewsSummary2",
+          "title": "Brand_reviews_summary"
+        },
+        "has_new_products": {
+          "type": "boolean",
+          "title": "Has_new_products"
+        },
+        "is_apparel": {
+          "type": "boolean",
+          "title": "Is_apparel"
+        },
+        "active_products_count": {
+          "type": "number",
+          "title": "Active_products_count"
+        },
+        "active_promo_collections": {
+          "type": "array",
+          "items": {},
+          "title": "Active_promo_collections"
+        },
+        "badges": {
+          "type": "array",
+          "items": {},
+          "title": "Badges"
+        },
+        "story_images": {
+          "type": "array",
+          "items": {},
+          "title": "Story_images"
+        },
+        "tags": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Tag2[]",
+          "title": "Tags"
+        },
+        "social_media_images": {
+          "type": "array",
+          "items": {},
+          "title": "Social_media_images"
+        }
+      },
+      "required": [
+        "token",
+        "active",
+        "is_new",
+        "name",
+        "profile_image",
+        "squared_image",
+        "description",
+        "is_internal",
+        "has_samples",
+        "is_top_shop",
+        "based_in",
+        "based_in_city",
+        "ships_from_country",
+        "hide_chat",
+        "primary_category",
+        "is_highlighted_brand_for_promotional_event",
+        "made_in",
+        "sold_on_amazon",
+        "eco_friendly",
+        "hand_made",
+        "charitable",
+        "organic",
+        "women_owned",
+        "small_batch",
+        "minimum_order_amount",
+        "first_order_minimum_amount",
+        "reorder_minimum_amount",
+        "lead_time_days",
+        "upper_bound_lead_time_days",
+        "lower_bound_lead_time_days",
+        "estimated_ship_date_formatted",
+        "zip_code_protection_enabled",
+        "is_first_order",
+        "banner_image",
+        "owner_first_name",
+        "creation_year",
+        "instagram_handle",
+        "brand_reviews_summary",
+        "has_new_products",
+        "is_apparel",
+        "active_products_count",
+        "active_promo_collections",
+        "badges",
+        "story_images",
+        "tags",
+        "social_media_images"
+      ],
+      "title": "Brand2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ShopPreferences2": {
+      "type": "object",
+      "properties": {
+        "still_fulfilling": {
+          "type": "boolean",
+          "title": "Still_fulfilling"
+        }
+      },
+      "required": [
+        "still_fulfilling"
+      ],
+      "title": "ShopPreferences2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandVideoPaginationData2": {
+      "type": "object",
+      "properties": {
+        "page_number": {
+          "type": "number",
+          "title": "Page_number"
+        },
+        "page_size": {
+          "type": "number",
+          "title": "Page_size"
+        },
+        "page_count": {
+          "type": "number",
+          "title": "Page_count"
+        },
+        "total_results": {
+          "type": "number",
+          "title": "Total_results"
+        }
+      },
+      "required": [
+        "page_number",
+        "page_size",
+        "page_count",
+        "total_results"
+      ],
+      "title": "BrandVideoPaginationData2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandSampleProgram2": {
+      "type": "object",
+      "properties": {
+        "is_samples_enabled_for_session": {
+          "type": "boolean",
+          "title": "Is_samples_enabled_for_session"
+        },
+        "is_pilot_group": {
+          "type": "boolean",
+          "title": "Is_pilot_group"
+        }
+      },
+      "required": [
+        "is_samples_enabled_for_session",
+        "is_pilot_group"
+      ],
+      "title": "BrandSampleProgram2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandLocationInfo2": {
+      "type": "object",
+      "properties": {
+        "ships_from_country_display_name": {
+          "type": "string",
+          "title": "Ships_from_country_display_name"
+        },
+        "made_in_country_display_name": {
+          "type": "string",
+          "title": "Made_in_country_display_name"
+        }
+      },
+      "required": [
+        "ships_from_country_display_name",
+        "made_in_country_display_name"
+      ],
+      "title": "BrandLocationInfo2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@InfoText2": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "text_color": {
+          "type": "string",
+          "title": "Text_color"
+        },
+        "style": {
+          "type": "string",
+          "title": "Style"
+        },
+        "type": {
+          "type": "string",
+          "title": "Type"
+        },
+        "tooltip": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Tooltip"
+        }
+      },
+      "required": [
+        "text",
+        "text_color",
+        "style",
+        "type"
+      ],
+      "title": "InfoText2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@InfoText2[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@InfoText2"
+      },
+      "title": "InfoText2[]"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandViewV2": {
+      "type": "object",
+      "properties": {
+        "brand": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Brand2",
+          "title": "Brand"
+        },
+        "shop_preferences": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ShopPreferences2",
+          "title": "Shop_preferences"
+        },
+        "brand_video_pagination_data": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandVideoPaginationData2",
+          "title": "Brand_video_pagination_data"
+        },
+        "eligible_for_uk_eu_brands_free_shipping": {
+          "type": "boolean",
+          "title": "Eligible_for_uk_eu_brands_free_shipping"
+        },
+        "is_non_returnable_partner_brand": {
+          "type": "boolean",
+          "title": "Is_non_returnable_partner_brand"
+        },
+        "has_insider_free_duties": {
+          "type": "boolean",
+          "title": "Has_insider_free_duties"
+        },
+        "is_showroom_brand": {
+          "type": "boolean",
+          "title": "Is_showroom_brand"
+        },
+        "brand_sample_program": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandSampleProgram2",
+          "title": "Brand_sample_program"
+        },
+        "has_current_or_upcoming_market_promotion": {
+          "type": "boolean",
+          "title": "Has_current_or_upcoming_market_promotion"
+        },
+        "show_optimized_brand_page_copy": {
+          "type": "boolean",
+          "title": "Show_optimized_brand_page_copy"
+        },
+        "brand_location_info": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandLocationInfo2",
+          "title": "Brand_location_info"
+        },
+        "brand_social_media_info": {
+          "title": "Brand_social_media_info"
+        },
+        "banners": {
+          "type": "array",
+          "items": {},
+          "title": "Banners"
+        },
+        "related_search_terms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Related_search_terms"
+        },
+        "brand_videos": {
+          "type": "array",
+          "items": {},
+          "title": "Brand_videos"
+        },
+        "active_season_years": {
+          "type": "array",
+          "items": {},
+          "title": "Active_season_years"
+        },
+        "info_texts": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@InfoText2[]",
+          "title": "Info_texts"
+        },
+        "faire_funded_promo": {
+          "type": "array",
+          "items": {},
+          "title": "Faire_funded_promo"
+        },
+        "highlighted_apparel_seasons_for_promotional_event": {
+          "type": "array",
+          "items": {},
+          "title": "Highlighted_apparel_seasons_for_promotional_event"
+        },
+        "promo_display_texts": {
+          "type": "array",
+          "items": {},
+          "title": "Promo_display_texts"
+        }
+      },
+      "required": [
+        "brand",
+        "shop_preferences",
+        "brand_video_pagination_data",
+        "eligible_for_uk_eu_brands_free_shipping",
+        "is_non_returnable_partner_brand",
+        "has_insider_free_duties",
+        "is_showroom_brand",
+        "brand_sample_program",
+        "has_current_or_upcoming_market_promotion",
+        "show_optimized_brand_page_copy",
+        "brand_location_info",
+        "brand_social_media_info",
+        "banners",
+        "related_search_terms",
+        "brand_videos",
+        "active_season_years",
+        "info_texts",
+        "faire_funded_promo",
+        "highlighted_apparel_seasons_for_promotional_event",
+        "promo_display_texts"
+      ],
+      "title": "BrandViewV2"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@PrefetchedData": {
+      "type": "object",
+      "properties": {
+        "brand_view": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandView",
+          "title": "Brand_view"
+        },
+        "brand_view_v2": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandViewV2",
+          "title": "Brand_view_v2"
+        }
+      },
+      "required": [
+        "brand_view",
+        "brand_view_v2"
+      ],
+      "title": "PrefetchedData"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@LayoutElementColors": {
+      "type": "object",
+      "properties": {
+        "main_text_color": {
+          "type": "string",
+          "title": "Main_text_color"
+        },
+        "description_text_color": {
+          "type": "string",
+          "title": "Description_text_color"
+        },
+        "background_color": {
+          "type": "string",
+          "title": "Background_color"
+        }
+      },
+      "required": [
+        "main_text_color",
+        "description_text_color",
+        "background_color"
+      ],
+      "title": "LayoutElementColors"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MarketListlayoutElementColors": {
+      "type": "object",
+      "properties": {
+        "main_text_color": {
+          "type": "string",
+          "title": "Main_text_color"
+        },
+        "description_text_color": {
+          "type": "string",
+          "title": "Description_text_color"
+        },
+        "background_color": {
+          "type": "string",
+          "title": "Background_color"
+        }
+      },
+      "required": [
+        "main_text_color",
+        "description_text_color",
+        "background_color"
+      ],
+      "title": "MarketListlayoutElementColors"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@PreShowEnrolledlayoutElementColors": {
+      "type": "object",
+      "properties": {
+        "main_text_color": {
+          "type": "string",
+          "title": "Main_text_color"
+        },
+        "description_text_color": {
+          "type": "string",
+          "title": "Description_text_color"
+        },
+        "background_color": {
+          "type": "string",
+          "title": "Background_color"
+        }
+      },
+      "required": [
+        "main_text_color",
+        "description_text_color",
+        "background_color"
+      ],
+      "title": "PreShowEnrolledlayoutElementColors"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MainStyle": {
+      "type": "object",
+      "properties": {
+        "text_color": {
+          "type": "string",
+          "title": "Text_color"
+        },
+        "background_color": {
+          "type": "string",
+          "title": "Background_color"
+        },
+        "image_url": {
+          "type": "string",
+          "title": "Image_url"
+        },
+        "badge_background_color": {
+          "type": "string",
+          "title": "Badge_background_color"
+        },
+        "primary_color2": {
+          "type": "string",
+          "title": "Primary_color2"
+        },
+        "layout_element_colors": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@LayoutElementColors",
+          "title": "Layout_element_colors"
+        },
+        "market_listlayout_element_colors": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MarketListlayoutElementColors",
+          "title": "Market_listlayout_element_colors"
+        },
+        "pre_show_enrolledlayout_element_colors": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@PreShowEnrolledlayoutElementColors",
+          "title": "Pre_show_enrolledlayout_element_colors"
+        }
+      },
+      "required": [
+        "text_color",
+        "background_color",
+        "image_url",
+        "badge_background_color",
+        "primary_color2",
+        "layout_element_colors",
+        "market_listlayout_element_colors",
+        "pre_show_enrolledlayout_element_colors"
+      ],
+      "title": "MainStyle"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@PromotionalStyle": {
+      "type": "object",
+      "properties": {
+        "text_color": {
+          "type": "string",
+          "title": "Text_color"
+        },
+        "background_color": {
+          "type": "string",
+          "title": "Background_color"
+        },
+        "image_url": {
+          "type": "string",
+          "title": "Image_url"
+        },
+        "badge_background_color": {
+          "type": "string",
+          "title": "Badge_background_color"
+        }
+      },
+      "required": [
+        "text_color",
+        "background_color",
+        "image_url",
+        "badge_background_color"
+      ],
+      "title": "PromotionalStyle"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobilePreShowBannerIneligibleImage": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {},
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "url",
+        "tags"
+      ],
+      "title": "MobilePreShowBannerIneligibleImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobilePreShowBannerEnrolledImage": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {},
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "url",
+        "tags"
+      ],
+      "title": "MobilePreShowBannerEnrolledImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobilePreShowBannerInactiveImage": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {},
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "url",
+        "tags"
+      ],
+      "title": "MobilePreShowBannerInactiveImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileHeroBannerImage": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {},
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "url",
+        "tags"
+      ],
+      "title": "MobileHeroBannerImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileInterstitialBannerImage": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {},
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "url",
+        "tags"
+      ],
+      "title": "MobileInterstitialBannerImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileInsiderBannerTitleIconImage": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "number",
+          "title": "Width"
+        },
+        "height": {
+          "type": "number",
+          "title": "Height"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {},
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "width",
+        "height",
+        "url",
+        "tags"
+      ],
+      "title": "MobileInsiderBannerTitleIconImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileTransparentTitleIconImage": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {},
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "url",
+        "tags"
+      ],
+      "title": "MobileTransparentTitleIconImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileHompageIconImage": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {},
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "url",
+        "tags"
+      ],
+      "title": "MobileHompageIconImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileHomepageEnrolledIconImage": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {},
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "url",
+        "tags"
+      ],
+      "title": "MobileHomepageEnrolledIconImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileInsiderIconImage": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {},
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "url",
+        "tags"
+      ],
+      "title": "MobileInsiderIconImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileInsiderEnrolledIconImage": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "tags": {
+          "type": "array",
+          "items": {},
+          "title": "Tags"
+        }
+      },
+      "required": [
+        "url",
+        "tags"
+      ],
+      "title": "MobileInsiderEnrolledIconImage"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileImages": {
+      "type": "object",
+      "properties": {
+        "mobile_pre_show_banner_ineligible_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobilePreShowBannerIneligibleImage",
+          "title": "Mobile_pre_show_banner_ineligible_image"
+        },
+        "mobile_pre_show_banner_enrolled_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobilePreShowBannerEnrolledImage",
+          "title": "Mobile_pre_show_banner_enrolled_image"
+        },
+        "mobile_pre_show_banner_inactive_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobilePreShowBannerInactiveImage",
+          "title": "Mobile_pre_show_banner_inactive_image"
+        },
+        "mobile_hero_banner_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileHeroBannerImage",
+          "title": "Mobile_hero_banner_image"
+        },
+        "mobile_interstitial_banner_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileInterstitialBannerImage",
+          "title": "Mobile_interstitial_banner_image"
+        },
+        "mobile_insider_banner_title_icon_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileInsiderBannerTitleIconImage",
+          "title": "Mobile_insider_banner_title_icon_image"
+        },
+        "mobile_transparent_title_icon_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileTransparentTitleIconImage",
+          "title": "Mobile_transparent_title_icon_image"
+        },
+        "mobile_hompage_icon_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileHompageIconImage",
+          "title": "Mobile_hompage_icon_image"
+        },
+        "mobile_homepage_enrolled_icon_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileHomepageEnrolledIconImage",
+          "title": "Mobile_homepage_enrolled_icon_image"
+        },
+        "mobile_insider_icon_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileInsiderIconImage",
+          "title": "Mobile_insider_icon_image"
+        },
+        "mobile_insider_enrolled_icon_image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileInsiderEnrolledIconImage",
+          "title": "Mobile_insider_enrolled_icon_image"
+        }
+      },
+      "required": [
+        "mobile_pre_show_banner_ineligible_image",
+        "mobile_pre_show_banner_enrolled_image",
+        "mobile_pre_show_banner_inactive_image",
+        "mobile_hero_banner_image",
+        "mobile_interstitial_banner_image",
+        "mobile_insider_banner_title_icon_image",
+        "mobile_transparent_title_icon_image",
+        "mobile_hompage_icon_image",
+        "mobile_homepage_enrolled_icon_image",
+        "mobile_insider_icon_image",
+        "mobile_insider_enrolled_icon_image"
+      ],
+      "title": "MobileImages"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Event": {
+      "type": "object",
+      "properties": {
+        "event_type": {
+          "type": "string",
+          "title": "Event_type"
+        },
+        "event_name": {
+          "type": "string",
+          "title": "Event_name"
+        },
+        "main_style": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MainStyle",
+          "title": "Main_style"
+        },
+        "promotional_style": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@PromotionalStyle",
+          "title": "Promotional_style"
+        },
+        "mobile_images": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MobileImages",
+          "title": "Mobile_images"
+        },
+        "only_style_highlighted_for_promotional_event": {
+          "type": "boolean",
+          "title": "Only_style_highlighted_for_promotional_event"
+        },
+        "event_group": {
+          "type": "string",
+          "title": "Event_group"
+        },
+        "logo_url": {
+          "type": "string",
+          "title": "Logo_url"
+        }
+      },
+      "required": [
+        "event_type",
+        "event_name",
+        "main_style",
+        "promotional_style",
+        "mobile_images",
+        "only_style_highlighted_for_promotional_event",
+        "event_group",
+        "logo_url"
+      ],
+      "title": "Event"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandPortalLaunchTime": {
+      "type": "object",
+      "properties": {
+        "seconds": {
+          "type": "number",
+          "title": "Seconds"
+        },
+        "nanos": {
+          "type": "number",
+          "title": "Nanos"
+        }
+      },
+      "required": [
+        "seconds",
+        "nanos"
+      ],
+      "title": "BrandPortalLaunchTime"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MarketListLaunchTime": {
+      "type": "object",
+      "properties": {
+        "seconds": {
+          "type": "number",
+          "title": "Seconds"
+        },
+        "nanos": {
+          "type": "number",
+          "title": "Nanos"
+        }
+      },
+      "required": [
+        "seconds",
+        "nanos"
+      ],
+      "title": "MarketListLaunchTime"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@RetailerPreShowLaunchTime": {
+      "type": "object",
+      "properties": {
+        "seconds": {
+          "type": "number",
+          "title": "Seconds"
+        },
+        "nanos": {
+          "type": "number",
+          "title": "Nanos"
+        }
+      },
+      "required": [
+        "seconds",
+        "nanos"
+      ],
+      "title": "RetailerPreShowLaunchTime"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@PreComputeHomepageLaunchTime": {
+      "type": "object",
+      "properties": {
+        "seconds": {
+          "type": "number",
+          "title": "Seconds"
+        },
+        "nanos": {
+          "type": "number",
+          "title": "Nanos"
+        }
+      },
+      "required": [
+        "seconds",
+        "nanos"
+      ],
+      "title": "PreComputeHomepageLaunchTime"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@NextOrActivePromotionalEvent": {
+      "type": "object",
+      "properties": {
+        "event": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@Event",
+          "title": "Event"
+        },
+        "brand_portal_launch_time": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandPortalLaunchTime",
+          "title": "Brand_portal_launch_time"
+        },
+        "market_list_launch_time": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@MarketListLaunchTime",
+          "title": "Market_list_launch_time"
+        },
+        "retailer_pre_show_launch_time": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@RetailerPreShowLaunchTime",
+          "title": "Retailer_pre_show_launch_time"
+        },
+        "pre_compute_homepage_launch_time": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@PreComputeHomepageLaunchTime",
+          "title": "Pre_compute_homepage_launch_time"
+        },
+        "insider_early_access_start_at": {
+          "type": "number",
+          "title": "Insider_early_access_start_at"
+        },
+        "start_at": {
+          "type": "number",
+          "title": "Start_at"
+        },
+        "end_at": {
+          "type": "number",
+          "title": "End_at"
+        }
+      },
+      "required": [
+        "event",
+        "brand_portal_launch_time",
+        "market_list_launch_time",
+        "retailer_pre_show_launch_time",
+        "pre_compute_homepage_launch_time",
+        "insider_early_access_start_at",
+        "start_at",
+        "end_at"
+      ],
+      "title": "NextOrActivePromotionalEvent"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@HrefLang": {
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string",
+          "title": "Href"
+        },
+        "hreflang": {
+          "type": "string",
+          "title": "Hreflang"
+        }
+      },
+      "required": [
+        "href",
+        "hreflang"
+      ],
+      "title": "HrefLang"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@HrefLang[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@HrefLang"
+      },
+      "title": "HrefLang[]"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@FaireResponse": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "props": {
+              "type": "object",
+              "properties": {
+                "slug": {
+                  "type": "string",
+                  "title": "Slug"
+                }
+              },
+              "required": [
+                "slug"
+              ],
+              "title": "Props"
+            },
+            "req": {
+              "title": "Req"
+            },
+            "env_name": {
+              "type": "string",
+              "title": "Env_name"
+            },
+            "cdn_url": {
+              "type": "string",
+              "title": "Cdn_url"
+            },
+            "ad_user_data": {
+              "title": "Ad_user_data"
+            },
+            "og_meta_data": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@OgMetaData",
+              "title": "Og_meta_data"
+            },
+            "facebook_open_graph_image_url": {
+              "type": "string",
+              "title": "Facebook_open_graph_image_url"
+            },
+            "is_robot": {
+              "type": "boolean",
+              "title": "Is_robot"
+            },
+            "is_prerender": {
+              "type": "boolean",
+              "title": "Is_prerender"
+            },
+            "is_url_recognized": {
+              "type": "boolean",
+              "title": "Is_url_recognized"
+            },
+            "server_side_render": {
+              "type": "string",
+              "title": "Server_side_render"
+            },
+            "react_renderer": {
+              "type": "string",
+              "title": "React_renderer"
+            },
+            "original_url": {
+              "type": "string",
+              "title": "Original_url"
+            },
+            "server_side_canonicalization": {
+              "type": "boolean",
+              "title": "Server_side_canonicalization"
+            },
+            "canonical_u_r_l": {
+              "type": "string",
+              "title": "Canonical_u_r_l"
+            },
+            "templated_path": {
+              "type": "string",
+              "title": "Templated_path"
+            },
+            "meta_description": {
+              "type": "string",
+              "title": "Meta_description"
+            },
+            "meta_keywords": {
+              "type": "string",
+              "title": "Meta_keywords"
+            },
+            "facebook_retailer_pixel_id": {
+              "type": "string",
+              "title": "Facebook_retailer_pixel_id"
+            },
+            "facebook_maker_pixel_id": {
+              "type": "string",
+              "title": "Facebook_maker_pixel_id"
+            },
+            "facebook_optimization_test_pixel_id": {
+              "type": "string",
+              "title": "Facebook_optimization_test_pixel_id"
+            },
+            "serve_heap_analytics": {
+              "type": "boolean",
+              "title": "Serve_heap_analytics"
+            },
+            "google_tag_manager_container_id": {
+              "type": "string",
+              "title": "Google_tag_manager_container_id"
+            },
+            "sentry_id": {
+              "type": "string",
+              "title": "Sentry_id"
+            },
+            "cookie_consent_key": {
+              "type": "string",
+              "title": "Cookie_consent_key"
+            },
+            "google_sso_client_id": {
+              "type": "string",
+              "title": "Google_sso_client_id"
+            },
+            "release_version": {
+              "type": "string",
+              "title": "Release_version"
+            },
+            "release_sha": {
+              "type": "string",
+              "title": "Release_sha"
+            },
+            "js_version": {
+              "type": "string",
+              "title": "Js_version"
+            },
+            "js_integrity": {
+              "type": "string",
+              "title": "Js_integrity"
+            },
+            "enable_js_integrity": {
+              "type": "boolean",
+              "title": "Enable_js_integrity"
+            },
+            "css_version": {
+              "type": "string",
+              "title": "Css_version"
+            },
+            "js_locale": {
+              "type": "string",
+              "title": "Js_locale"
+            },
+            "load_only_visible_images": {
+              "type": "boolean",
+              "title": "Load_only_visible_images"
+            },
+            "show_experimental_home_page_design": {
+              "type": "boolean",
+              "title": "Show_experimental_home_page_design"
+            },
+            "maker_count": {
+              "type": "number",
+              "title": "Maker_count"
+            },
+            "new_brands_count": {
+              "type": "number",
+              "title": "New_brands_count"
+            },
+            "new_brands_this_week_count": {
+              "type": "number",
+              "title": "New_brands_this_week_count"
+            },
+            "should_show_app_banner_mobile": {
+              "type": "boolean",
+              "title": "Should_show_app_banner_mobile"
+            },
+            "app_promotion_banner_links": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@AppPromotionBannerLinks",
+              "title": "App_promotion_banner_links"
+            },
+            "is_app_installed": {
+              "type": "boolean",
+              "title": "Is_app_installed"
+            },
+            "show_amex_banner": {
+              "type": "boolean",
+              "title": "Show_amex_banner"
+            },
+            "first_order_free_shipping_offer_expires_at": {
+              "type": "number",
+              "title": "First_order_free_shipping_offer_expires_at"
+            },
+            "has_placed_first_app_order": {
+              "type": "boolean",
+              "title": "Has_placed_first_app_order"
+            },
+            "opening_order_discount_data": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@OpeningOrderDiscountData",
+              "title": "Opening_order_discount_data"
+            },
+            "first_order_incentive_discount_data": {
+              "title": "First_order_incentive_discount_data"
+            },
+            "app_download_incentive_data": {
+              "title": "App_download_incentive_data"
+            },
+            "re_engagement_incentive_data": {
+              "title": "Re_engagement_incentive_data"
+            },
+            "user_token": {
+              "type": "string",
+              "title": "User_token"
+            },
+            "session_country": {
+              "type": "string",
+              "title": "Session_country"
+            },
+            "currency_format_locale": {
+              "type": "string",
+              "title": "Currency_format_locale"
+            },
+            "store_type": {
+              "type": "string",
+              "title": "Store_type"
+            },
+            "is_verified_retailer": {
+              "type": "boolean",
+              "title": "Is_verified_retailer"
+            },
+            "is_apparel_retailer": {
+              "type": "boolean",
+              "title": "Is_apparel_retailer"
+            },
+            "is_upmarket_retailer": {
+              "type": "boolean",
+              "title": "Is_upmarket_retailer"
+            },
+            "is_engaged_upmarket_retailer": {
+              "type": "boolean",
+              "title": "Is_engaged_upmarket_retailer"
+            },
+            "is_eligible_for_apparel_exclusive_sale": {
+              "type": "boolean",
+              "title": "Is_eligible_for_apparel_exclusive_sale"
+            },
+            "nudge_to_checkout": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@NudgeToCheckout",
+              "title": "Nudge_to_checkout"
+            },
+            "brand_token": {
+              "type": "string",
+              "title": "Brand_token"
+            },
+            "walkthrough_time_remaining_millis": {
+              "type": "number",
+              "title": "Walkthrough_time_remaining_millis"
+            },
+            "plaid_env": {
+              "type": "string",
+              "title": "Plaid_env"
+            },
+            "plaid_key": {
+              "type": "string",
+              "title": "Plaid_key"
+            },
+            "plaid_webhook_url": {
+              "type": "string",
+              "title": "Plaid_webhook_url"
+            },
+            "square_connection_application_id": {
+              "type": "string",
+              "title": "Square_connection_application_id"
+            },
+            "square_connection_location_id": {
+              "type": "string",
+              "title": "Square_connection_location_id"
+            },
+            "stripe_public_key": {
+              "type": "string",
+              "title": "Stripe_public_key"
+            },
+            "google_places_api_key": {
+              "type": "string",
+              "title": "Google_places_api_key"
+            },
+            "elevate_brand_token": {
+              "type": "string",
+              "title": "Elevate_brand_token"
+            },
+            "cdn_name": {
+              "type": "string",
+              "title": "Cdn_name"
+            },
+            "promo_modal_information": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@PromoModalInformation",
+              "title": "Promo_modal_information"
+            },
+            "brand_discounts": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandDiscounts",
+              "title": "Brand_discounts"
+            },
+            "has_memberships": {
+              "type": "boolean",
+              "title": "Has_memberships"
+            },
+            "is_frontend_override": {
+              "type": "boolean",
+              "title": "Is_frontend_override"
+            },
+            "has_referrals_r2_m": {
+              "type": "boolean",
+              "title": "Has_referrals_r2_m"
+            },
+            "bundle_prefix": {
+              "type": "string",
+              "title": "Bundle_prefix"
+            },
+            "insider_shipping_savings": {
+              "title": "Insider_shipping_savings"
+            },
+            "is_locally_hosted_frontend": {
+              "type": "boolean",
+              "title": "Is_locally_hosted_frontend"
+            },
+            "datadog_rum_config": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@DatadogRumConfig",
+              "title": "Datadog_rum_config"
+            },
+            "settings_values": {
+              "type": "string",
+              "title": "Settings_values"
+            },
+            "hotjar_settings_values": {
+              "type": "string",
+              "title": "Hotjar_settings_values"
+            },
+            "performance_metric_settings": {
+              "type": "string",
+              "title": "Performance_metric_settings"
+            },
+            "net_terms_blocker_experiment": {
+              "type": "boolean",
+              "title": "Net_terms_blocker_experiment"
+            },
+            "vendor_bundle_url": {
+              "type": "string",
+              "title": "Vendor_bundle_url"
+            },
+            "address_schema_map": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@AddressSchemaMap",
+              "title": "Address_schema_map"
+            },
+            "locale_key": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@LocaleKey",
+              "title": "Locale_key"
+            },
+            "locale_id": {
+              "type": "string",
+              "title": "Locale_id"
+            },
+            "route_product_area": {
+              "type": "string",
+              "title": "Route_product_area"
+            },
+            "route_pod": {
+              "type": "string",
+              "title": "Route_pod"
+            },
+            "route_pillar": {
+              "type": "string",
+              "title": "Route_pillar"
+            },
+            "prefetched_data": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@PrefetchedData",
+              "title": "Prefetched_data"
+            },
+            "apple_sso_client_id": {
+              "type": "string",
+              "title": "Apple_sso_client_id"
+            },
+            "category_tree_type": {
+              "type": "string",
+              "title": "Category_tree_type"
+            },
+            "category_user_group": {
+              "type": "string",
+              "title": "Category_user_group"
+            },
+            "navigation_tree_hash_code": {
+              "type": "string",
+              "title": "Navigation_tree_hash_code"
+            },
+            "record_lifecycle_events": {
+              "type": "boolean",
+              "title": "Record_lifecycle_events"
+            },
+            "product_schema": {
+              "type": "string",
+              "title": "Product_schema"
+            },
+            "reduce_preloaded_fonts": {
+              "type": "boolean",
+              "title": "Reduce_preloaded_fonts"
+            },
+            "next_or_active_promotional_event": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@NextOrActivePromotionalEvent",
+              "title": "Next_or_active_promotional_event"
+            },
+            "use_woff": {
+              "type": "boolean",
+              "title": "Use_woff"
+            },
+            "user_agent": {
+              "type": "string",
+              "title": "User_agent"
+            },
+            "market_event_matched_discount_bps": {
+              "type": "number",
+              "title": "Market_event_matched_discount_bps"
+            },
+            "market_event_free_shipping_matched_discount_bps": {
+              "type": "number",
+              "title": "Market_event_free_shipping_matched_discount_bps"
+            },
+            "use_react18_renderer": {
+              "type": "boolean",
+              "title": "Use_react18_renderer"
+            },
+            "stream_grpc_request": {
+              "type": "boolean",
+              "title": "Stream_grpc_request"
+            },
+            "modal_data": {
+              "title": "Modal_data"
+            },
+            "user_milestones": {
+              "type": "array",
+              "items": {},
+              "title": "User_milestones"
+            },
+            "referral_promotions": {
+              "type": "array",
+              "items": {},
+              "title": "Referral_promotions"
+            },
+            "categories": {
+              "type": "array",
+              "items": {},
+              "title": "Categories"
+            },
+            "featured_seasonal_tiles": {
+              "type": "array",
+              "items": {},
+              "title": "Featured_seasonal_tiles"
+            },
+            "free_shipping_statuses": {
+              "type": "array",
+              "items": {},
+              "title": "Free_shipping_statuses"
+            },
+            "available_memberships": {
+              "type": "array",
+              "items": {},
+              "title": "Available_memberships"
+            },
+            "preload_urls": {
+              "type": "array",
+              "items": {},
+              "title": "Preload_urls"
+            },
+            "preload_resources": {
+              "type": "array",
+              "items": {},
+              "title": "Preload_resources"
+            },
+            "suggested_search_terms": {
+              "type": "array",
+              "items": {},
+              "title": "Suggested_search_terms"
+            },
+            "href_langs": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@HrefLang[]",
+              "title": "Href_langs"
+            },
+            "promotional_event_milestones": {
+              "type": "array",
+              "items": {},
+              "title": "Promotional_event_milestones"
+            }
+          },
+          "required": [
+            "props",
+            "req",
+            "env_name",
+            "cdn_url",
+            "ad_user_data",
+            "og_meta_data",
+            "facebook_open_graph_image_url",
+            "is_robot",
+            "is_prerender",
+            "is_url_recognized",
+            "server_side_render",
+            "react_renderer",
+            "original_url",
+            "server_side_canonicalization",
+            "canonical_u_r_l",
+            "templated_path",
+            "meta_description",
+            "meta_keywords",
+            "facebook_retailer_pixel_id",
+            "facebook_maker_pixel_id",
+            "facebook_optimization_test_pixel_id",
+            "serve_heap_analytics",
+            "google_tag_manager_container_id",
+            "sentry_id",
+            "cookie_consent_key",
+            "google_sso_client_id",
+            "release_version",
+            "release_sha",
+            "js_version",
+            "js_integrity",
+            "enable_js_integrity",
+            "css_version",
+            "js_locale",
+            "load_only_visible_images",
+            "show_experimental_home_page_design",
+            "maker_count",
+            "new_brands_count",
+            "new_brands_this_week_count",
+            "should_show_app_banner_mobile",
+            "app_promotion_banner_links",
+            "is_app_installed",
+            "show_amex_banner",
+            "first_order_free_shipping_offer_expires_at",
+            "has_placed_first_app_order",
+            "opening_order_discount_data",
+            "first_order_incentive_discount_data",
+            "app_download_incentive_data",
+            "re_engagement_incentive_data",
+            "user_token",
+            "session_country",
+            "currency_format_locale",
+            "store_type",
+            "is_verified_retailer",
+            "is_apparel_retailer",
+            "is_upmarket_retailer",
+            "is_engaged_upmarket_retailer",
+            "is_eligible_for_apparel_exclusive_sale",
+            "nudge_to_checkout",
+            "brand_token",
+            "walkthrough_time_remaining_millis",
+            "plaid_env",
+            "plaid_key",
+            "plaid_webhook_url",
+            "square_connection_application_id",
+            "square_connection_location_id",
+            "stripe_public_key",
+            "google_places_api_key",
+            "elevate_brand_token",
+            "cdn_name",
+            "promo_modal_information",
+            "brand_discounts",
+            "has_memberships",
+            "is_frontend_override",
+            "has_referrals_r2_m",
+            "bundle_prefix",
+            "insider_shipping_savings",
+            "is_locally_hosted_frontend",
+            "datadog_rum_config",
+            "settings_values",
+            "hotjar_settings_values",
+            "performance_metric_settings",
+            "net_terms_blocker_experiment",
+            "vendor_bundle_url",
+            "address_schema_map",
+            "locale_key",
+            "locale_id",
+            "route_product_area",
+            "route_pod",
+            "route_pillar",
+            "prefetched_data",
+            "apple_sso_client_id",
+            "category_tree_type",
+            "category_user_group",
+            "navigation_tree_hash_code",
+            "record_lifecycle_events",
+            "product_schema",
+            "reduce_preloaded_fonts",
+            "next_or_active_promotional_event",
+            "use_woff",
+            "user_agent",
+            "market_event_matched_discount_bps",
+            "market_event_free_shipping_matched_discount_bps",
+            "use_react18_renderer",
+            "stream_grpc_request",
+            "modal_data",
+            "user_milestones",
+            "referral_promotions",
+            "categories",
+            "featured_seasonal_tiles",
+            "free_shipping_statuses",
+            "available_memberships",
+            "preload_urls",
+            "preload_resources",
+            "suggested_search_terms",
+            "href_langs",
+            "promotional_event_milestones"
+          ],
+          "title": "deco-sites/faireb2b/components/types.ts@FaireResponse"
+        },
+        {
+          "title": "deco-sites/faireb2b/loaders/faireBrandPage.ts",
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlQnJhbmRQYWdlLnRz@Props"
+            }
+          ],
+          "required": [
+            "__resolveType"
+          ],
+          "properties": {
+            "__resolveType": {
+              "type": "string",
+              "enum": [
+                "deco-sites/faireb2b/loaders/faireBrandPage.ts"
+              ],
+              "default": "deco-sites/faireb2b/loaders/faireBrandPage.ts"
+            }
+          }
+        }
+      ]
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlQnJhbmRQYWdlLnRz@Props": {
+      "type": "object",
+      "properties": {
+        "slug": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL3JlcXVlc3RUb1BhcmFtLnRz@RequestURLParam",
+          "title": "Slug"
+        }
+      },
+      "required": [
+        "slug"
+      ],
+      "title": "deco-sites/faireb2b/loaders/faireBrandPage.ts@Props"
+    },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler": {
       "$ref": "#/root/handlers",
       "title": "Handler"
@@ -7540,6 +12912,19 @@
         "sections"
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL2JyYW5kL0JyYW5kRGV0YWlsc1BhZ2UudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@FaireResponse",
+          "title": "Page"
+        }
+      },
+      "required": [
+        "page"
+      ],
+      "title": "deco-sites/faireb2b/components/brand/BrandDetailsPage.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
       "type": "string",
@@ -13779,6 +19164,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlQnJhbmRQYWdlLnRz": {
+      "title": "deco-sites/faireb2b/loaders/faireBrandPage.ts",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlQnJhbmRQYWdlLnRz@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/faireb2b/loaders/faireBrandPage.ts"
+          ],
+          "default": "deco-sites/faireb2b/loaders/faireBrandPage.ts"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92bmRhL3Byb3h5LnRz": {
       "title": "VNDA Proxy Routes",
       "type": "object",
@@ -14516,6 +19922,27 @@
             "$live/sections/UseSlot.tsx"
           ],
           "default": "$live/sections/UseSlot.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9CcmFuZC9CcmFuZERldGFpbHNQYWdlLnRzeA==": {
+      "title": "deco-sites/faireb2b/sections/Brand/BrandDetailsPage.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL2JyYW5kL0JyYW5kRGV0YWlsc1BhZ2UudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/faireb2b/sections/Brand/BrandDetailsPage.tsx"
+          ],
+          "default": "deco-sites/faireb2b/sections/Brand/BrandDetailsPage.tsx"
         }
       }
     },
@@ -16039,6 +21466,9 @@
           "$ref": "#/definitions/JGxpdmUvbG9hZGVycy93b3JrZmxvd3MvZ2V0LnRz"
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlQnJhbmRQYWdlLnRz"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92bmRhL3Byb3h5LnRz"
         },
         {
@@ -16187,6 +21617,9 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9CcmFuZC9CcmFuZERldGFpbHNQYWdlLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9DYXRlZ29yeS9DYXRlZ29yeUJhbm5lci50c3g="
