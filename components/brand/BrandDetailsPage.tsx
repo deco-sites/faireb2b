@@ -2,7 +2,7 @@ import type { LoaderReturnType } from "$live/types.ts";
 import type { FaireResponse } from "$store/components/types.ts";
 
 export interface Props {
-  page: LoaderReturnType<FaireResponse>;
+  page: LoaderReturnType<FaireResponse | null>;
 }
 
 function BrandDetailsPage({ page }: Props) {

@@ -8,17 +8,17 @@ export interface Props {
 
 async function loader(
   props: Props,
-  req: Request,
-): Promise<FaireResponse> {
-  console.log("🟢🟢🔴🔴 props");
-  console.log("🟢🔴🟢🔴 req", req);
+): Promise<FaireResponse | null> {
+  const { slug } = props;
+
+  if(!slug) return null
+
   const fetchData = await fetchAPI<FaireResponse>(
-    `https://www.faire.com/brand/b_j2trt8jt6d`,
+    `https://www.faire.com/brand/${slug}`,
   );
   return {
     ...fetchData,
     props,
-    req,
   };
 }
 

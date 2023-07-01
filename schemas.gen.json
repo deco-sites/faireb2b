@@ -8596,609 +8596,615 @@
       "title": "HrefLang[]"
     },
     "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@FaireResponse": {
+      "type": "object",
+      "properties": {
+        "props": {
+          "type": "object",
+          "properties": {
+            "slug": {
+              "type": "string",
+              "title": "Slug"
+            }
+          },
+          "required": [
+            "slug"
+          ],
+          "title": "Props"
+        },
+        "req": {
+          "title": "Req"
+        },
+        "env_name": {
+          "type": "string",
+          "title": "Env_name"
+        },
+        "cdn_url": {
+          "type": "string",
+          "title": "Cdn_url"
+        },
+        "ad_user_data": {
+          "title": "Ad_user_data"
+        },
+        "og_meta_data": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@OgMetaData",
+          "title": "Og_meta_data"
+        },
+        "facebook_open_graph_image_url": {
+          "type": "string",
+          "title": "Facebook_open_graph_image_url"
+        },
+        "is_robot": {
+          "type": "boolean",
+          "title": "Is_robot"
+        },
+        "is_prerender": {
+          "type": "boolean",
+          "title": "Is_prerender"
+        },
+        "is_url_recognized": {
+          "type": "boolean",
+          "title": "Is_url_recognized"
+        },
+        "server_side_render": {
+          "type": "string",
+          "title": "Server_side_render"
+        },
+        "react_renderer": {
+          "type": "string",
+          "title": "React_renderer"
+        },
+        "original_url": {
+          "type": "string",
+          "title": "Original_url"
+        },
+        "server_side_canonicalization": {
+          "type": "boolean",
+          "title": "Server_side_canonicalization"
+        },
+        "canonical_u_r_l": {
+          "type": "string",
+          "title": "Canonical_u_r_l"
+        },
+        "templated_path": {
+          "type": "string",
+          "title": "Templated_path"
+        },
+        "meta_description": {
+          "type": "string",
+          "title": "Meta_description"
+        },
+        "meta_keywords": {
+          "type": "string",
+          "title": "Meta_keywords"
+        },
+        "facebook_retailer_pixel_id": {
+          "type": "string",
+          "title": "Facebook_retailer_pixel_id"
+        },
+        "facebook_maker_pixel_id": {
+          "type": "string",
+          "title": "Facebook_maker_pixel_id"
+        },
+        "facebook_optimization_test_pixel_id": {
+          "type": "string",
+          "title": "Facebook_optimization_test_pixel_id"
+        },
+        "serve_heap_analytics": {
+          "type": "boolean",
+          "title": "Serve_heap_analytics"
+        },
+        "google_tag_manager_container_id": {
+          "type": "string",
+          "title": "Google_tag_manager_container_id"
+        },
+        "sentry_id": {
+          "type": "string",
+          "title": "Sentry_id"
+        },
+        "cookie_consent_key": {
+          "type": "string",
+          "title": "Cookie_consent_key"
+        },
+        "google_sso_client_id": {
+          "type": "string",
+          "title": "Google_sso_client_id"
+        },
+        "release_version": {
+          "type": "string",
+          "title": "Release_version"
+        },
+        "release_sha": {
+          "type": "string",
+          "title": "Release_sha"
+        },
+        "js_version": {
+          "type": "string",
+          "title": "Js_version"
+        },
+        "js_integrity": {
+          "type": "string",
+          "title": "Js_integrity"
+        },
+        "enable_js_integrity": {
+          "type": "boolean",
+          "title": "Enable_js_integrity"
+        },
+        "css_version": {
+          "type": "string",
+          "title": "Css_version"
+        },
+        "js_locale": {
+          "type": "string",
+          "title": "Js_locale"
+        },
+        "load_only_visible_images": {
+          "type": "boolean",
+          "title": "Load_only_visible_images"
+        },
+        "show_experimental_home_page_design": {
+          "type": "boolean",
+          "title": "Show_experimental_home_page_design"
+        },
+        "maker_count": {
+          "type": "number",
+          "title": "Maker_count"
+        },
+        "new_brands_count": {
+          "type": "number",
+          "title": "New_brands_count"
+        },
+        "new_brands_this_week_count": {
+          "type": "number",
+          "title": "New_brands_this_week_count"
+        },
+        "should_show_app_banner_mobile": {
+          "type": "boolean",
+          "title": "Should_show_app_banner_mobile"
+        },
+        "app_promotion_banner_links": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@AppPromotionBannerLinks",
+          "title": "App_promotion_banner_links"
+        },
+        "is_app_installed": {
+          "type": "boolean",
+          "title": "Is_app_installed"
+        },
+        "show_amex_banner": {
+          "type": "boolean",
+          "title": "Show_amex_banner"
+        },
+        "first_order_free_shipping_offer_expires_at": {
+          "type": "number",
+          "title": "First_order_free_shipping_offer_expires_at"
+        },
+        "has_placed_first_app_order": {
+          "type": "boolean",
+          "title": "Has_placed_first_app_order"
+        },
+        "opening_order_discount_data": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@OpeningOrderDiscountData",
+          "title": "Opening_order_discount_data"
+        },
+        "first_order_incentive_discount_data": {
+          "title": "First_order_incentive_discount_data"
+        },
+        "app_download_incentive_data": {
+          "title": "App_download_incentive_data"
+        },
+        "re_engagement_incentive_data": {
+          "title": "Re_engagement_incentive_data"
+        },
+        "user_token": {
+          "type": "string",
+          "title": "User_token"
+        },
+        "session_country": {
+          "type": "string",
+          "title": "Session_country"
+        },
+        "currency_format_locale": {
+          "type": "string",
+          "title": "Currency_format_locale"
+        },
+        "store_type": {
+          "type": "string",
+          "title": "Store_type"
+        },
+        "is_verified_retailer": {
+          "type": "boolean",
+          "title": "Is_verified_retailer"
+        },
+        "is_apparel_retailer": {
+          "type": "boolean",
+          "title": "Is_apparel_retailer"
+        },
+        "is_upmarket_retailer": {
+          "type": "boolean",
+          "title": "Is_upmarket_retailer"
+        },
+        "is_engaged_upmarket_retailer": {
+          "type": "boolean",
+          "title": "Is_engaged_upmarket_retailer"
+        },
+        "is_eligible_for_apparel_exclusive_sale": {
+          "type": "boolean",
+          "title": "Is_eligible_for_apparel_exclusive_sale"
+        },
+        "nudge_to_checkout": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@NudgeToCheckout",
+          "title": "Nudge_to_checkout"
+        },
+        "brand_token": {
+          "type": "string",
+          "title": "Brand_token"
+        },
+        "walkthrough_time_remaining_millis": {
+          "type": "number",
+          "title": "Walkthrough_time_remaining_millis"
+        },
+        "plaid_env": {
+          "type": "string",
+          "title": "Plaid_env"
+        },
+        "plaid_key": {
+          "type": "string",
+          "title": "Plaid_key"
+        },
+        "plaid_webhook_url": {
+          "type": "string",
+          "title": "Plaid_webhook_url"
+        },
+        "square_connection_application_id": {
+          "type": "string",
+          "title": "Square_connection_application_id"
+        },
+        "square_connection_location_id": {
+          "type": "string",
+          "title": "Square_connection_location_id"
+        },
+        "stripe_public_key": {
+          "type": "string",
+          "title": "Stripe_public_key"
+        },
+        "google_places_api_key": {
+          "type": "string",
+          "title": "Google_places_api_key"
+        },
+        "elevate_brand_token": {
+          "type": "string",
+          "title": "Elevate_brand_token"
+        },
+        "cdn_name": {
+          "type": "string",
+          "title": "Cdn_name"
+        },
+        "promo_modal_information": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@PromoModalInformation",
+          "title": "Promo_modal_information"
+        },
+        "brand_discounts": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandDiscounts",
+          "title": "Brand_discounts"
+        },
+        "has_memberships": {
+          "type": "boolean",
+          "title": "Has_memberships"
+        },
+        "is_frontend_override": {
+          "type": "boolean",
+          "title": "Is_frontend_override"
+        },
+        "has_referrals_r2_m": {
+          "type": "boolean",
+          "title": "Has_referrals_r2_m"
+        },
+        "bundle_prefix": {
+          "type": "string",
+          "title": "Bundle_prefix"
+        },
+        "insider_shipping_savings": {
+          "title": "Insider_shipping_savings"
+        },
+        "is_locally_hosted_frontend": {
+          "type": "boolean",
+          "title": "Is_locally_hosted_frontend"
+        },
+        "datadog_rum_config": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@DatadogRumConfig",
+          "title": "Datadog_rum_config"
+        },
+        "settings_values": {
+          "type": "string",
+          "title": "Settings_values"
+        },
+        "hotjar_settings_values": {
+          "type": "string",
+          "title": "Hotjar_settings_values"
+        },
+        "performance_metric_settings": {
+          "type": "string",
+          "title": "Performance_metric_settings"
+        },
+        "net_terms_blocker_experiment": {
+          "type": "boolean",
+          "title": "Net_terms_blocker_experiment"
+        },
+        "vendor_bundle_url": {
+          "type": "string",
+          "title": "Vendor_bundle_url"
+        },
+        "address_schema_map": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@AddressSchemaMap",
+          "title": "Address_schema_map"
+        },
+        "locale_key": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@LocaleKey",
+          "title": "Locale_key"
+        },
+        "locale_id": {
+          "type": "string",
+          "title": "Locale_id"
+        },
+        "route_product_area": {
+          "type": "string",
+          "title": "Route_product_area"
+        },
+        "route_pod": {
+          "type": "string",
+          "title": "Route_pod"
+        },
+        "route_pillar": {
+          "type": "string",
+          "title": "Route_pillar"
+        },
+        "prefetched_data": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@PrefetchedData",
+          "title": "Prefetched_data"
+        },
+        "apple_sso_client_id": {
+          "type": "string",
+          "title": "Apple_sso_client_id"
+        },
+        "category_tree_type": {
+          "type": "string",
+          "title": "Category_tree_type"
+        },
+        "category_user_group": {
+          "type": "string",
+          "title": "Category_user_group"
+        },
+        "navigation_tree_hash_code": {
+          "type": "string",
+          "title": "Navigation_tree_hash_code"
+        },
+        "record_lifecycle_events": {
+          "type": "boolean",
+          "title": "Record_lifecycle_events"
+        },
+        "product_schema": {
+          "type": "string",
+          "title": "Product_schema"
+        },
+        "reduce_preloaded_fonts": {
+          "type": "boolean",
+          "title": "Reduce_preloaded_fonts"
+        },
+        "next_or_active_promotional_event": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@NextOrActivePromotionalEvent",
+          "title": "Next_or_active_promotional_event"
+        },
+        "use_woff": {
+          "type": "boolean",
+          "title": "Use_woff"
+        },
+        "user_agent": {
+          "type": "string",
+          "title": "User_agent"
+        },
+        "market_event_matched_discount_bps": {
+          "type": "number",
+          "title": "Market_event_matched_discount_bps"
+        },
+        "market_event_free_shipping_matched_discount_bps": {
+          "type": "number",
+          "title": "Market_event_free_shipping_matched_discount_bps"
+        },
+        "use_react18_renderer": {
+          "type": "boolean",
+          "title": "Use_react18_renderer"
+        },
+        "stream_grpc_request": {
+          "type": "boolean",
+          "title": "Stream_grpc_request"
+        },
+        "modal_data": {
+          "title": "Modal_data"
+        },
+        "user_milestones": {
+          "type": "array",
+          "items": {},
+          "title": "User_milestones"
+        },
+        "referral_promotions": {
+          "type": "array",
+          "items": {},
+          "title": "Referral_promotions"
+        },
+        "categories": {
+          "type": "array",
+          "items": {},
+          "title": "Categories"
+        },
+        "featured_seasonal_tiles": {
+          "type": "array",
+          "items": {},
+          "title": "Featured_seasonal_tiles"
+        },
+        "free_shipping_statuses": {
+          "type": "array",
+          "items": {},
+          "title": "Free_shipping_statuses"
+        },
+        "available_memberships": {
+          "type": "array",
+          "items": {},
+          "title": "Available_memberships"
+        },
+        "preload_urls": {
+          "type": "array",
+          "items": {},
+          "title": "Preload_urls"
+        },
+        "preload_resources": {
+          "type": "array",
+          "items": {},
+          "title": "Preload_resources"
+        },
+        "suggested_search_terms": {
+          "type": "array",
+          "items": {},
+          "title": "Suggested_search_terms"
+        },
+        "href_langs": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@HrefLang[]",
+          "title": "Href_langs"
+        },
+        "promotional_event_milestones": {
+          "type": "array",
+          "items": {},
+          "title": "Promotional_event_milestones"
+        }
+      },
+      "required": [
+        "props",
+        "req",
+        "env_name",
+        "cdn_url",
+        "ad_user_data",
+        "og_meta_data",
+        "facebook_open_graph_image_url",
+        "is_robot",
+        "is_prerender",
+        "is_url_recognized",
+        "server_side_render",
+        "react_renderer",
+        "original_url",
+        "server_side_canonicalization",
+        "canonical_u_r_l",
+        "templated_path",
+        "meta_description",
+        "meta_keywords",
+        "facebook_retailer_pixel_id",
+        "facebook_maker_pixel_id",
+        "facebook_optimization_test_pixel_id",
+        "serve_heap_analytics",
+        "google_tag_manager_container_id",
+        "sentry_id",
+        "cookie_consent_key",
+        "google_sso_client_id",
+        "release_version",
+        "release_sha",
+        "js_version",
+        "js_integrity",
+        "enable_js_integrity",
+        "css_version",
+        "js_locale",
+        "load_only_visible_images",
+        "show_experimental_home_page_design",
+        "maker_count",
+        "new_brands_count",
+        "new_brands_this_week_count",
+        "should_show_app_banner_mobile",
+        "app_promotion_banner_links",
+        "is_app_installed",
+        "show_amex_banner",
+        "first_order_free_shipping_offer_expires_at",
+        "has_placed_first_app_order",
+        "opening_order_discount_data",
+        "first_order_incentive_discount_data",
+        "app_download_incentive_data",
+        "re_engagement_incentive_data",
+        "user_token",
+        "session_country",
+        "currency_format_locale",
+        "store_type",
+        "is_verified_retailer",
+        "is_apparel_retailer",
+        "is_upmarket_retailer",
+        "is_engaged_upmarket_retailer",
+        "is_eligible_for_apparel_exclusive_sale",
+        "nudge_to_checkout",
+        "brand_token",
+        "walkthrough_time_remaining_millis",
+        "plaid_env",
+        "plaid_key",
+        "plaid_webhook_url",
+        "square_connection_application_id",
+        "square_connection_location_id",
+        "stripe_public_key",
+        "google_places_api_key",
+        "elevate_brand_token",
+        "cdn_name",
+        "promo_modal_information",
+        "brand_discounts",
+        "has_memberships",
+        "is_frontend_override",
+        "has_referrals_r2_m",
+        "bundle_prefix",
+        "insider_shipping_savings",
+        "is_locally_hosted_frontend",
+        "datadog_rum_config",
+        "settings_values",
+        "hotjar_settings_values",
+        "performance_metric_settings",
+        "net_terms_blocker_experiment",
+        "vendor_bundle_url",
+        "address_schema_map",
+        "locale_key",
+        "locale_id",
+        "route_product_area",
+        "route_pod",
+        "route_pillar",
+        "prefetched_data",
+        "apple_sso_client_id",
+        "category_tree_type",
+        "category_user_group",
+        "navigation_tree_hash_code",
+        "record_lifecycle_events",
+        "product_schema",
+        "reduce_preloaded_fonts",
+        "next_or_active_promotional_event",
+        "use_woff",
+        "user_agent",
+        "market_event_matched_discount_bps",
+        "market_event_free_shipping_matched_discount_bps",
+        "use_react18_renderer",
+        "stream_grpc_request",
+        "modal_data",
+        "user_milestones",
+        "referral_promotions",
+        "categories",
+        "featured_seasonal_tiles",
+        "free_shipping_statuses",
+        "available_memberships",
+        "preload_urls",
+        "preload_resources",
+        "suggested_search_terms",
+        "href_langs",
+        "promotional_event_milestones"
+      ],
+      "title": "FaireResponse"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@FaireResponse|null": {
       "anyOf": [
         {
           "$ref": "#/definitions/Resolvable"
         },
         {
-          "type": "object",
-          "properties": {
-            "props": {
-              "type": "object",
-              "properties": {
-                "slug": {
-                  "type": "string",
-                  "title": "Slug"
-                }
-              },
-              "required": [
-                "slug"
-              ],
-              "title": "Props"
-            },
-            "req": {
-              "title": "Req"
-            },
-            "env_name": {
-              "type": "string",
-              "title": "Env_name"
-            },
-            "cdn_url": {
-              "type": "string",
-              "title": "Cdn_url"
-            },
-            "ad_user_data": {
-              "title": "Ad_user_data"
-            },
-            "og_meta_data": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@OgMetaData",
-              "title": "Og_meta_data"
-            },
-            "facebook_open_graph_image_url": {
-              "type": "string",
-              "title": "Facebook_open_graph_image_url"
-            },
-            "is_robot": {
-              "type": "boolean",
-              "title": "Is_robot"
-            },
-            "is_prerender": {
-              "type": "boolean",
-              "title": "Is_prerender"
-            },
-            "is_url_recognized": {
-              "type": "boolean",
-              "title": "Is_url_recognized"
-            },
-            "server_side_render": {
-              "type": "string",
-              "title": "Server_side_render"
-            },
-            "react_renderer": {
-              "type": "string",
-              "title": "React_renderer"
-            },
-            "original_url": {
-              "type": "string",
-              "title": "Original_url"
-            },
-            "server_side_canonicalization": {
-              "type": "boolean",
-              "title": "Server_side_canonicalization"
-            },
-            "canonical_u_r_l": {
-              "type": "string",
-              "title": "Canonical_u_r_l"
-            },
-            "templated_path": {
-              "type": "string",
-              "title": "Templated_path"
-            },
-            "meta_description": {
-              "type": "string",
-              "title": "Meta_description"
-            },
-            "meta_keywords": {
-              "type": "string",
-              "title": "Meta_keywords"
-            },
-            "facebook_retailer_pixel_id": {
-              "type": "string",
-              "title": "Facebook_retailer_pixel_id"
-            },
-            "facebook_maker_pixel_id": {
-              "type": "string",
-              "title": "Facebook_maker_pixel_id"
-            },
-            "facebook_optimization_test_pixel_id": {
-              "type": "string",
-              "title": "Facebook_optimization_test_pixel_id"
-            },
-            "serve_heap_analytics": {
-              "type": "boolean",
-              "title": "Serve_heap_analytics"
-            },
-            "google_tag_manager_container_id": {
-              "type": "string",
-              "title": "Google_tag_manager_container_id"
-            },
-            "sentry_id": {
-              "type": "string",
-              "title": "Sentry_id"
-            },
-            "cookie_consent_key": {
-              "type": "string",
-              "title": "Cookie_consent_key"
-            },
-            "google_sso_client_id": {
-              "type": "string",
-              "title": "Google_sso_client_id"
-            },
-            "release_version": {
-              "type": "string",
-              "title": "Release_version"
-            },
-            "release_sha": {
-              "type": "string",
-              "title": "Release_sha"
-            },
-            "js_version": {
-              "type": "string",
-              "title": "Js_version"
-            },
-            "js_integrity": {
-              "type": "string",
-              "title": "Js_integrity"
-            },
-            "enable_js_integrity": {
-              "type": "boolean",
-              "title": "Enable_js_integrity"
-            },
-            "css_version": {
-              "type": "string",
-              "title": "Css_version"
-            },
-            "js_locale": {
-              "type": "string",
-              "title": "Js_locale"
-            },
-            "load_only_visible_images": {
-              "type": "boolean",
-              "title": "Load_only_visible_images"
-            },
-            "show_experimental_home_page_design": {
-              "type": "boolean",
-              "title": "Show_experimental_home_page_design"
-            },
-            "maker_count": {
-              "type": "number",
-              "title": "Maker_count"
-            },
-            "new_brands_count": {
-              "type": "number",
-              "title": "New_brands_count"
-            },
-            "new_brands_this_week_count": {
-              "type": "number",
-              "title": "New_brands_this_week_count"
-            },
-            "should_show_app_banner_mobile": {
-              "type": "boolean",
-              "title": "Should_show_app_banner_mobile"
-            },
-            "app_promotion_banner_links": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@AppPromotionBannerLinks",
-              "title": "App_promotion_banner_links"
-            },
-            "is_app_installed": {
-              "type": "boolean",
-              "title": "Is_app_installed"
-            },
-            "show_amex_banner": {
-              "type": "boolean",
-              "title": "Show_amex_banner"
-            },
-            "first_order_free_shipping_offer_expires_at": {
-              "type": "number",
-              "title": "First_order_free_shipping_offer_expires_at"
-            },
-            "has_placed_first_app_order": {
-              "type": "boolean",
-              "title": "Has_placed_first_app_order"
-            },
-            "opening_order_discount_data": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@OpeningOrderDiscountData",
-              "title": "Opening_order_discount_data"
-            },
-            "first_order_incentive_discount_data": {
-              "title": "First_order_incentive_discount_data"
-            },
-            "app_download_incentive_data": {
-              "title": "App_download_incentive_data"
-            },
-            "re_engagement_incentive_data": {
-              "title": "Re_engagement_incentive_data"
-            },
-            "user_token": {
-              "type": "string",
-              "title": "User_token"
-            },
-            "session_country": {
-              "type": "string",
-              "title": "Session_country"
-            },
-            "currency_format_locale": {
-              "type": "string",
-              "title": "Currency_format_locale"
-            },
-            "store_type": {
-              "type": "string",
-              "title": "Store_type"
-            },
-            "is_verified_retailer": {
-              "type": "boolean",
-              "title": "Is_verified_retailer"
-            },
-            "is_apparel_retailer": {
-              "type": "boolean",
-              "title": "Is_apparel_retailer"
-            },
-            "is_upmarket_retailer": {
-              "type": "boolean",
-              "title": "Is_upmarket_retailer"
-            },
-            "is_engaged_upmarket_retailer": {
-              "type": "boolean",
-              "title": "Is_engaged_upmarket_retailer"
-            },
-            "is_eligible_for_apparel_exclusive_sale": {
-              "type": "boolean",
-              "title": "Is_eligible_for_apparel_exclusive_sale"
-            },
-            "nudge_to_checkout": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@NudgeToCheckout",
-              "title": "Nudge_to_checkout"
-            },
-            "brand_token": {
-              "type": "string",
-              "title": "Brand_token"
-            },
-            "walkthrough_time_remaining_millis": {
-              "type": "number",
-              "title": "Walkthrough_time_remaining_millis"
-            },
-            "plaid_env": {
-              "type": "string",
-              "title": "Plaid_env"
-            },
-            "plaid_key": {
-              "type": "string",
-              "title": "Plaid_key"
-            },
-            "plaid_webhook_url": {
-              "type": "string",
-              "title": "Plaid_webhook_url"
-            },
-            "square_connection_application_id": {
-              "type": "string",
-              "title": "Square_connection_application_id"
-            },
-            "square_connection_location_id": {
-              "type": "string",
-              "title": "Square_connection_location_id"
-            },
-            "stripe_public_key": {
-              "type": "string",
-              "title": "Stripe_public_key"
-            },
-            "google_places_api_key": {
-              "type": "string",
-              "title": "Google_places_api_key"
-            },
-            "elevate_brand_token": {
-              "type": "string",
-              "title": "Elevate_brand_token"
-            },
-            "cdn_name": {
-              "type": "string",
-              "title": "Cdn_name"
-            },
-            "promo_modal_information": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@PromoModalInformation",
-              "title": "Promo_modal_information"
-            },
-            "brand_discounts": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@BrandDiscounts",
-              "title": "Brand_discounts"
-            },
-            "has_memberships": {
-              "type": "boolean",
-              "title": "Has_memberships"
-            },
-            "is_frontend_override": {
-              "type": "boolean",
-              "title": "Is_frontend_override"
-            },
-            "has_referrals_r2_m": {
-              "type": "boolean",
-              "title": "Has_referrals_r2_m"
-            },
-            "bundle_prefix": {
-              "type": "string",
-              "title": "Bundle_prefix"
-            },
-            "insider_shipping_savings": {
-              "title": "Insider_shipping_savings"
-            },
-            "is_locally_hosted_frontend": {
-              "type": "boolean",
-              "title": "Is_locally_hosted_frontend"
-            },
-            "datadog_rum_config": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@DatadogRumConfig",
-              "title": "Datadog_rum_config"
-            },
-            "settings_values": {
-              "type": "string",
-              "title": "Settings_values"
-            },
-            "hotjar_settings_values": {
-              "type": "string",
-              "title": "Hotjar_settings_values"
-            },
-            "performance_metric_settings": {
-              "type": "string",
-              "title": "Performance_metric_settings"
-            },
-            "net_terms_blocker_experiment": {
-              "type": "boolean",
-              "title": "Net_terms_blocker_experiment"
-            },
-            "vendor_bundle_url": {
-              "type": "string",
-              "title": "Vendor_bundle_url"
-            },
-            "address_schema_map": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@AddressSchemaMap",
-              "title": "Address_schema_map"
-            },
-            "locale_key": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@LocaleKey",
-              "title": "Locale_key"
-            },
-            "locale_id": {
-              "type": "string",
-              "title": "Locale_id"
-            },
-            "route_product_area": {
-              "type": "string",
-              "title": "Route_product_area"
-            },
-            "route_pod": {
-              "type": "string",
-              "title": "Route_pod"
-            },
-            "route_pillar": {
-              "type": "string",
-              "title": "Route_pillar"
-            },
-            "prefetched_data": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@PrefetchedData",
-              "title": "Prefetched_data"
-            },
-            "apple_sso_client_id": {
-              "type": "string",
-              "title": "Apple_sso_client_id"
-            },
-            "category_tree_type": {
-              "type": "string",
-              "title": "Category_tree_type"
-            },
-            "category_user_group": {
-              "type": "string",
-              "title": "Category_user_group"
-            },
-            "navigation_tree_hash_code": {
-              "type": "string",
-              "title": "Navigation_tree_hash_code"
-            },
-            "record_lifecycle_events": {
-              "type": "boolean",
-              "title": "Record_lifecycle_events"
-            },
-            "product_schema": {
-              "type": "string",
-              "title": "Product_schema"
-            },
-            "reduce_preloaded_fonts": {
-              "type": "boolean",
-              "title": "Reduce_preloaded_fonts"
-            },
-            "next_or_active_promotional_event": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@NextOrActivePromotionalEvent",
-              "title": "Next_or_active_promotional_event"
-            },
-            "use_woff": {
-              "type": "boolean",
-              "title": "Use_woff"
-            },
-            "user_agent": {
-              "type": "string",
-              "title": "User_agent"
-            },
-            "market_event_matched_discount_bps": {
-              "type": "number",
-              "title": "Market_event_matched_discount_bps"
-            },
-            "market_event_free_shipping_matched_discount_bps": {
-              "type": "number",
-              "title": "Market_event_free_shipping_matched_discount_bps"
-            },
-            "use_react18_renderer": {
-              "type": "boolean",
-              "title": "Use_react18_renderer"
-            },
-            "stream_grpc_request": {
-              "type": "boolean",
-              "title": "Stream_grpc_request"
-            },
-            "modal_data": {
-              "title": "Modal_data"
-            },
-            "user_milestones": {
-              "type": "array",
-              "items": {},
-              "title": "User_milestones"
-            },
-            "referral_promotions": {
-              "type": "array",
-              "items": {},
-              "title": "Referral_promotions"
-            },
-            "categories": {
-              "type": "array",
-              "items": {},
-              "title": "Categories"
-            },
-            "featured_seasonal_tiles": {
-              "type": "array",
-              "items": {},
-              "title": "Featured_seasonal_tiles"
-            },
-            "free_shipping_statuses": {
-              "type": "array",
-              "items": {},
-              "title": "Free_shipping_statuses"
-            },
-            "available_memberships": {
-              "type": "array",
-              "items": {},
-              "title": "Available_memberships"
-            },
-            "preload_urls": {
-              "type": "array",
-              "items": {},
-              "title": "Preload_urls"
-            },
-            "preload_resources": {
-              "type": "array",
-              "items": {},
-              "title": "Preload_resources"
-            },
-            "suggested_search_terms": {
-              "type": "array",
-              "items": {},
-              "title": "Suggested_search_terms"
-            },
-            "href_langs": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@HrefLang[]",
-              "title": "Href_langs"
-            },
-            "promotional_event_milestones": {
-              "type": "array",
-              "items": {},
-              "title": "Promotional_event_milestones"
-            }
-          },
-          "required": [
-            "props",
-            "req",
-            "env_name",
-            "cdn_url",
-            "ad_user_data",
-            "og_meta_data",
-            "facebook_open_graph_image_url",
-            "is_robot",
-            "is_prerender",
-            "is_url_recognized",
-            "server_side_render",
-            "react_renderer",
-            "original_url",
-            "server_side_canonicalization",
-            "canonical_u_r_l",
-            "templated_path",
-            "meta_description",
-            "meta_keywords",
-            "facebook_retailer_pixel_id",
-            "facebook_maker_pixel_id",
-            "facebook_optimization_test_pixel_id",
-            "serve_heap_analytics",
-            "google_tag_manager_container_id",
-            "sentry_id",
-            "cookie_consent_key",
-            "google_sso_client_id",
-            "release_version",
-            "release_sha",
-            "js_version",
-            "js_integrity",
-            "enable_js_integrity",
-            "css_version",
-            "js_locale",
-            "load_only_visible_images",
-            "show_experimental_home_page_design",
-            "maker_count",
-            "new_brands_count",
-            "new_brands_this_week_count",
-            "should_show_app_banner_mobile",
-            "app_promotion_banner_links",
-            "is_app_installed",
-            "show_amex_banner",
-            "first_order_free_shipping_offer_expires_at",
-            "has_placed_first_app_order",
-            "opening_order_discount_data",
-            "first_order_incentive_discount_data",
-            "app_download_incentive_data",
-            "re_engagement_incentive_data",
-            "user_token",
-            "session_country",
-            "currency_format_locale",
-            "store_type",
-            "is_verified_retailer",
-            "is_apparel_retailer",
-            "is_upmarket_retailer",
-            "is_engaged_upmarket_retailer",
-            "is_eligible_for_apparel_exclusive_sale",
-            "nudge_to_checkout",
-            "brand_token",
-            "walkthrough_time_remaining_millis",
-            "plaid_env",
-            "plaid_key",
-            "plaid_webhook_url",
-            "square_connection_application_id",
-            "square_connection_location_id",
-            "stripe_public_key",
-            "google_places_api_key",
-            "elevate_brand_token",
-            "cdn_name",
-            "promo_modal_information",
-            "brand_discounts",
-            "has_memberships",
-            "is_frontend_override",
-            "has_referrals_r2_m",
-            "bundle_prefix",
-            "insider_shipping_savings",
-            "is_locally_hosted_frontend",
-            "datadog_rum_config",
-            "settings_values",
-            "hotjar_settings_values",
-            "performance_metric_settings",
-            "net_terms_blocker_experiment",
-            "vendor_bundle_url",
-            "address_schema_map",
-            "locale_key",
-            "locale_id",
-            "route_product_area",
-            "route_pod",
-            "route_pillar",
-            "prefetched_data",
-            "apple_sso_client_id",
-            "category_tree_type",
-            "category_user_group",
-            "navigation_tree_hash_code",
-            "record_lifecycle_events",
-            "product_schema",
-            "reduce_preloaded_fonts",
-            "next_or_active_promotional_event",
-            "use_woff",
-            "user_agent",
-            "market_event_matched_discount_bps",
-            "market_event_free_shipping_matched_discount_bps",
-            "use_react18_renderer",
-            "stream_grpc_request",
-            "modal_data",
-            "user_milestones",
-            "referral_promotions",
-            "categories",
-            "featured_seasonal_tiles",
-            "free_shipping_statuses",
-            "available_memberships",
-            "preload_urls",
-            "preload_resources",
-            "suggested_search_terms",
-            "href_langs",
-            "promotional_event_milestones"
-          ],
-          "title": "deco-sites/faireb2b/components/types.ts@FaireResponse"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@FaireResponse"
+        },
+        {
+          "type": "null"
         },
         {
           "title": "deco-sites/faireb2b/loaders/faireBrandPage.ts",
@@ -12917,7 +12923,7 @@
       "type": "object",
       "properties": {
         "page": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@FaireResponse",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@FaireResponse|null",
           "title": "Page"
         }
       },
