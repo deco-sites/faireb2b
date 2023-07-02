@@ -1,3 +1,5 @@
+import type { AggregateRating } from "deco-sites/std/commerce/types.ts";
+
 export interface FaireResponse {
   props: {
     slug: string;
@@ -117,6 +119,28 @@ export interface FaireResponse {
   suggested_search_terms: unknown[];
   href_langs: HrefLang[];
   promotional_event_milestones: unknown[];
+}
+
+export interface FaireBrand {
+  titlePage: string;
+  metaDescriptionPage: string;
+  name: string;
+  profileName: string;
+  profileDescription: string;
+  profileImage: ProfileImage;
+  bannerImage: string;
+  modalStory: {
+    storyImage: string;
+    basedIn: string;
+    account: string;
+    description: string;
+    established: number;
+    brandTags: Tag[];
+    storyImages: StoryImage[];
+    featuredIn: Badge[];
+    videoUrl: string | undefined;
+  };
+  aggregateRating: AggregateRating;
 }
 
 export interface OgMetaData {
@@ -748,7 +772,7 @@ export interface Brand {
   deranked_categories: unknown[];
   images: unknown[];
   social_media_images: unknown[];
-  badges: unknown[];
+  badges: Badge[];
   squared_category_images: unknown;
   ship_from_addresses: unknown[];
   available_terms: unknown[];
@@ -758,7 +782,7 @@ export interface Brand {
   restricted_countries: unknown[];
   restricted_geo_constraints: unknown[];
   memberships: unknown[];
-  story_images: unknown[];
+  story_images: StoryImage[];
   active_brand_promos: unknown[];
   active_promo_collections: unknown[];
   order_minimum_overrides: unknown[];
@@ -766,6 +790,7 @@ export interface Brand {
   certifications: unknown[];
   business_identifiers: unknown[];
   tags: Tag[];
+  video_url?: string;
 }
 
 export interface StoryImage {
@@ -950,12 +975,18 @@ export interface Brand2 {
   is_apparel: boolean;
   active_products_count: number;
   active_promo_collections: unknown[];
-  badges: unknown[];
+  badges: Badge[];
   story_images: unknown[];
   tags: Tag2[];
   social_media_images: unknown[];
 }
-
+export interface Badge {
+  type: string;
+  image: {
+    url: string;
+    tags: unknown[];
+  };
+}
 export interface ProfileImage2 {
   token: string;
   width: number;
