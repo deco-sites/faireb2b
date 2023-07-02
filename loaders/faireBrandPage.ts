@@ -41,7 +41,7 @@ async function loader(props: Props, req: Request): Promise<FaireBrand | null> {
     name: brand_view.brand.name,
     profileName: brand_view.show_optimized_brand_page_copy
       ? `${brand_view.brand.name} products for your store`
-      : `Purchase ${brand_view.brand.name} for your store`,
+      : `Purchase <br/> <span class="notranslate">${brand_view.brand.name}</span> <br/> for your store`,
     profileDescription: brand_view.show_optimized_brand_page_copy
       ? `${brand_view.brand.name} and other independent brands on the Faire wholesale marketplace.`
       : `Discover thousands of independent wholesale vendors in the Faire marketplace.`,
