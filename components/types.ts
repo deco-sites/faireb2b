@@ -1,9 +1,31 @@
-import type { AggregateRating } from "deco-sites/std/commerce/types.ts";
+import type {
+  AggregateRating,
+  BreadcrumbList,
+} from "deco-sites/std/commerce/types.ts";
 
-export interface FaireResponse {
-  props: {
-    slug: string;
+export interface FaireBrand {
+  breadcrumbList: BreadcrumbList;
+  titlePage: string;
+  metaDescriptionPage: string;
+  name: string;
+  profileName: string;
+  profileDescription: string;
+  profileImage: ProfileImage;
+  bannerImage: string;
+  modalStory: {
+    storyImage: string;
+    basedIn: string;
+    account: string;
+    description: string;
+    established: number;
+    brandTags: Tag[];
+    storyImages: StoryImage[];
+    featuredIn: Badge[];
+    videoUrl: string | undefined;
   };
+  aggregateRating: AggregateRating;
+}
+export interface FaireResponse {
   req: Request;
   env_name: string;
   cdn_url: string;
@@ -119,28 +141,6 @@ export interface FaireResponse {
   suggested_search_terms: unknown[];
   href_langs: HrefLang[];
   promotional_event_milestones: unknown[];
-}
-
-export interface FaireBrand {
-  titlePage: string;
-  metaDescriptionPage: string;
-  name: string;
-  profileName: string;
-  profileDescription: string;
-  profileImage: ProfileImage;
-  bannerImage: string;
-  modalStory: {
-    storyImage: string;
-    basedIn: string;
-    account: string;
-    description: string;
-    established: number;
-    brandTags: Tag[];
-    storyImages: StoryImage[];
-    featuredIn: Badge[];
-    videoUrl: string | undefined;
-  };
-  aggregateRating: AggregateRating;
 }
 
 export interface OgMetaData {

@@ -4029,6 +4029,10 @@
     "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@FaireBrand": {
       "type": "object",
       "properties": {
+        "breadcrumbList": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@BreadcrumbList",
+          "title": "Breadcrumb List"
+        },
         "titlePage": {
           "type": "string",
           "title": "Title Page"
@@ -4123,6 +4127,7 @@
         }
       },
       "required": [
+        "breadcrumbList",
         "titlePage",
         "metaDescriptionPage",
         "name",

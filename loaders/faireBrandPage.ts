@@ -6,7 +6,7 @@ export interface Props {
   slug: RequestURLParam;
 }
 
-async function loader(props: Props): Promise<FaireBrand | null> {
+async function loader(props: Props, req: Request): Promise<FaireBrand | null> {
   const { slug } = props;
 
   if (!slug) return null;
@@ -20,6 +20,18 @@ async function loader(props: Props): Promise<FaireBrand | null> {
   } = fetchData;
 
   return {
+    breadcrumbList: {
+      "@type": "BreadcrumbList",
+      numberOfItems: 1,
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          name: brand_view.brand.name,
+          item: req.url,
+          position: 1,
+        },
+      ],
+    },
     titlePage: brand_view.show_optimized_brand_page_copy
       ? `${brand_view.brand.name} for your store | ${brand_view.brand.name} wholesale products on Faire`
       : `Spiral Wholesale Products | Buy with Free Returns on Faire.com`,

@@ -105,6 +105,21 @@
   animation: progress-frame ease normal
 }
 
+.breadcrumbs > ul > li + *:before, .breadcrumbs > ol > li + *:before {
+  content: "/";
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 0.25rem/* 4px */;
+  margin-right: 0.25rem/* 4px */;
+  display: block;
+  height: auto;
+  width: auto;
+  transform: none !important;
+  opacity: 1;
+  border: none !important;
+  background-color: transparent;
+}
+
 @keyframes progress-frame {
   0% {
     --dot-progress: 0%
