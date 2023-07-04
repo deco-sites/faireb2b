@@ -15,6 +15,7 @@ export interface FaireBrand {
   modalStory: {
     storyImage: string;
     basedIn: string;
+    basedInCity: string;
     account: string;
     description: string;
     established: number;
