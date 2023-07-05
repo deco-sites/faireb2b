@@ -3,6 +3,7 @@ import type { FaireBrand } from "$store/components/types.ts";
 import ButtonSignUp from "$store/components/ui/ButtonSignUp.tsx";
 
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
+import { StarRating } from "$store/components/ui/StarRating.tsx";
 import Image from "deco-sites/std/components/Image.tsx";
 export interface Props {
   page: LoaderReturnType<FaireBrand | null>;
@@ -91,9 +92,9 @@ function BrandDetailsPage({ page }: Props) {
             {/* AQUI VAI OS PRODUTOS COM O LOADER DE PRODUTOS */}
           </div>
           <div class=" sm:hidden">
-            <div class="flex justify-center gap-4 pt-8 pb-6">
+            <div class="flex justify-center items-center gap-4 pt-8 pb-6">
               <div className="avatar">
-                <div className="w-16 rounded-full">
+                <div className="w-16 rounded-full relative">
                   <Image
                     src={page.profileImage.url}
                     alt={`${page.name} avatar`}
@@ -101,6 +102,11 @@ function BrandDetailsPage({ page }: Props) {
                     height={64}
                     class="bg-primary"
                     title={page.name}
+                  />
+                  <div
+                    id="TransparencyOverlay"
+                    class="w-full h-full absolute left-0 top-0 z-10 pointer-events-none"
+                    style={{ background: "rgba(0, 0, 0, 0.02);" }}
                   />
                 </div>
               </div>
@@ -112,9 +118,14 @@ function BrandDetailsPage({ page }: Props) {
                   Based in {page.modalStory.basedInCity}
                 </p>
                 {/* MOCKADO */}
-                <p class="text-sm text-neutral font-extralight tracking-[0.15px]">
-                  🟊🟊🟊🟊🟊 5.0
-                </p>
+                {!!page.aggregateRating.ratingValue && (
+                  <div class="flex gap-2">
+                    <StarRating rating={page.aggregateRating.ratingValue} />
+                    <p class="text-sm text-neutral font-extralight tracking-[0.15px]">
+                      {page.aggregateRating.ratingValue}
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
             <div>
