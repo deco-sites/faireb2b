@@ -21,6 +21,7 @@ export type Props = JSX.IntrinsicElements["dialog"] & {
   loading?: "lazy" | "eager";
   hideHeader?: boolean;
   containerClass?: string;
+  wrapperClass?: string;
 };
 
 const dialogStyles = {
@@ -102,7 +103,11 @@ const Modal = ({
               <Icon id="XMark" width={20} height={20} strokeWidth={2} />
             </Button>
           </header>
-          <div class="overflow-y-auto flex-grow flex flex-col">
+          <div
+            class={`overflow-y-auto flex-grow flex flex-col ${
+              props.wrapperClass ?? ""
+            }`}
+          >
             {loading === "lazy" ? lazy.value && children : children}
           </div>
         </div>

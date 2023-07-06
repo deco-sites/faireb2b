@@ -5,6 +5,7 @@ import ButtonSignUp from "$store/components/ui/ButtonSignUp.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import { StarRating } from "$store/components/ui/StarRating.tsx";
 import Image from "deco-sites/std/components/Image.tsx";
+import BrandModal from "$store/islands/BrandModal.tsx";
 export interface Props {
   page: LoaderReturnType<FaireBrand | null>;
 }
@@ -122,19 +123,20 @@ function BrandDetailsPage({ page }: Props) {
                   <div class="flex gap-2">
                     <StarRating rating={page.aggregateRating.ratingValue} />
                     <p class="text-sm text-neutral font-extralight tracking-[0.15px]">
-                      {page.aggregateRating.ratingValue}
+                      {page.aggregateRating.ratingValue.toFixed(1)}
                     </p>
                   </div>
                 )}
               </div>
             </div>
-            <div>
+            <div class="flex flex-col items-center justify-center gap-4">
               <p
                 class="text-sm text-neutral font-extralight tracking-[0.15px] line-clamp-3 text-center sm:text-left"
                 style={{ overflowWrap: "anywhere" }}
               >
                 {page.modalStory.description}
               </p>
+              <BrandModal modalStory={page.modalStory} name={page.name} />
             </div>
           </div>
         </div>
