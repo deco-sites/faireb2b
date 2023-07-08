@@ -68,6 +68,7 @@
               "./islands/HeaderModals.tsx",
               "./islands/HeaderSearchbar.tsx",
               "./islands/Newsletter.tsx",
+              "./islands/OpenModalButton.tsx",
               "./islands/OutOfStock.tsx",
               "./islands/ProductImageZoom.tsx",
               "./islands/SearchControls.tsx",
@@ -14525,6 +14526,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL09wZW5Nb2RhbEJ1dHRvbi50c3g=": {
+      "title": "./islands/OpenModalButton.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/OpenModalButton.tsx"
+          ],
+          "default": "./islands/OpenModalButton.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL091dE9mU3RvY2sudHN4": {
       "title": "./islands/OutOfStock.tsx",
       "type": "object",
@@ -16512,6 +16529,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL05ld3NsZXR0ZXIudHN4"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL09wZW5Nb2RhbEJ1dHRvbi50c3g="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL091dE9mU3RvY2sudHN4"

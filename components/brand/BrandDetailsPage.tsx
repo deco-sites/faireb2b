@@ -6,6 +6,8 @@ import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import { StarRating } from "$store/components/ui/StarRating.tsx";
 import Image from "deco-sites/std/components/Image.tsx";
 import BrandModal from "$store/islands/BrandModal.tsx";
+import OpenModalButton from "$store/islands/OpenModalButton.tsx";
+
 export interface Props {
   page: LoaderReturnType<FaireBrand | null>;
 }
@@ -65,9 +67,9 @@ function BrandDetailsPage({ page }: Props) {
           <div class="sm:min-h-16" style={{ minHeight: "3.5rem" }} />
         </div>
         <div class="flex flex-col mx-4 items-stretch sm:flex-row sm:mx-14">
-          <div class="flex flex-col items-center">
+          <div class="flex flex-col items-center sm:items-start sm:max-w-[350px]">
             <h1
-              class="font-nantes m-0 p-0 text-primary font-normal sm:text-3xl sm:leading-10 text-center sm:text-left mb-2 sm:mb-4"
+              class="font-nantes m-0 p-0 text-primary font-normal sm:!text-3xl sm:leading-10 text-center sm:text-left mb-2 sm:mb-4"
               dangerouslySetInnerHTML={{ __html: page.profileName }}
               style={{ fontSize: "1.375rem" }}
             />
@@ -75,11 +77,11 @@ function BrandDetailsPage({ page }: Props) {
               class="text-neutral m-0 p-0 font-extralight text-sm sm:text-lg tracking-[0.15px] text-center sm:text-left"
               dangerouslySetInnerHTML={{ __html: page.profileDescription }}
             />
-            <div class="mt-6 mb-8">
+            <div class="mt-6 mb-8 sm:mb-0">
               <ButtonSignUp />
             </div>
             <div
-              class="sm:w-[228px] my-8"
+              class="sm:!w-[228px] my-8 sm:my-10"
               style={{
                 width: "120px",
                 blockSize: "1px",
@@ -88,6 +90,28 @@ function BrandDetailsPage({ page }: Props) {
                 borderInline: "0px",
               }}
             />
+            <div class="hidden sm:flex flex-col">
+              {!!page.aggregateRating.ratingValue && (
+                <div class="flex gap-2">
+                  <StarRating
+                    rating={page.aggregateRating.ratingValue}
+                    id="Top"
+                  />
+                  <p class="text-sm text-neutral font-extralight tracking-[0.15px]">
+                    {page.aggregateRating.ratingValue.toFixed(1)}
+                  </p>
+                </div>
+              )}
+              <div class="flex flex-col items-start justify-center gap-4 pt-4">
+                <p
+                  class="text-sm text-neutral font-extralight tracking-[0.15px] line-clamp-3 text-left"
+                  style={{ overflowWrap: "anywhere" }}
+                >
+                  {page.modalStory.description}
+                </p>
+                <OpenModalButton />
+              </div>
+            </div>
           </div>
           <div class="flex">
             {/* AQUI VAI OS PRODUTOS COM O LOADER DE PRODUTOS */}
@@ -118,10 +142,12 @@ function BrandDetailsPage({ page }: Props) {
                 <p class="text-sm text-neutral font-extralight tracking-[0.15px] mb-1">
                   Based in {page.modalStory.basedInCity}
                 </p>
-                {/* MOCKADO */}
                 {!!page.aggregateRating.ratingValue && (
                   <div class="flex gap-2">
-                    <StarRating rating={page.aggregateRating.ratingValue} />
+                    <StarRating
+                      rating={page.aggregateRating.ratingValue}
+                      id="Bottom"
+                    />
                     <p class="text-sm text-neutral font-extralight tracking-[0.15px]">
                       {page.aggregateRating.ratingValue.toFixed(1)}
                     </p>
@@ -136,10 +162,11 @@ function BrandDetailsPage({ page }: Props) {
               >
                 {page.modalStory.description}
               </p>
-              <BrandModal modalStory={page.modalStory} name={page.name} />
+              <OpenModalButton />
             </div>
           </div>
         </div>
+        <BrandModal modalStory={page.modalStory} name={page.name} />
       </div>
       {/* {JSON.stringify(page)} */}
     </div>

@@ -2,15 +2,16 @@ import Icon from "$store/components/ui/Icon.tsx";
 
 interface Props {
   rating: number;
+  id?: string;
 }
 
-export const StarRating = ({ rating }: Props) => {
+export const StarRating = ({ rating, id }: Props) => {
   const filledColor = "#333333"; // Cor para estrelas preenchidas
   const emptyColor = "#fff"; // Cor para estrelas vazias
 
   // Função para criar o gradiente linear com base na porcentagem do valor total
   const createLinearGradient = (percentage: number) => {
-    const gradientId = `gradient-${percentage}`;
+    const gradientId = `gradient-${percentage}-${id}`;
 
     return (
       <linearGradient id={gradientId}>
@@ -22,8 +23,8 @@ export const StarRating = ({ rating }: Props) => {
 
   // Função para criar uma estrela individual
   const createStar = (index: number, percentage: number) => {
-    const gradientId = `gradient-${percentage}`;
-    const uniqueKey = `star-${index}`;
+    const gradientId = `gradient-${percentage}-${id}`;
+    const uniqueKey = `star-${index}-${id}`;
 
     return (
       <svg

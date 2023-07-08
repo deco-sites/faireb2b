@@ -20,6 +20,7 @@ export type Props = JSX.IntrinsicElements["dialog"] & {
   onClose?: () => Promise<void> | void;
   loading?: "lazy" | "eager";
   hideHeader?: boolean;
+  showButtonClose?: boolean;
   containerClass?: string;
   wrapperClass?: string;
 };
@@ -50,6 +51,7 @@ const Modal = ({
   children,
   loading,
   hideHeader,
+  showButtonClose,
   ...props
 }: Props) => {
   const lazy = useSignal(false);
@@ -85,7 +87,7 @@ const Modal = ({
         class={`w-full h-full flex bg-transparent ${sectionStyles[mode]}`}
       >
         <div
-          class={`bg-base-100 flex flex-col max-h-full ${
+          class={`bg-base-100 flex flex-col max-h-full relative ${
             containerStyles[mode]
           } ${props.containerClass ?? ""}`}
         >
@@ -103,6 +105,14 @@ const Modal = ({
               <Icon id="XMark" width={20} height={20} strokeWidth={2} />
             </Button>
           </header>
+          {(hideHeader && showButtonClose) && (
+            <Button
+              class="btn btn-ghost absolute z-10 py-4 px-3 top-0 right-1 hover:!bg-transparent"
+              onClick={onClose}
+            >
+              <Icon id="XMark" width={16} height={16} strokeWidth={2} />
+            </Button>
+          )}
           <div
             class={`overflow-y-auto flex-grow flex flex-col ${
               props.wrapperClass ?? ""
