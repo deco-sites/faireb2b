@@ -39,6 +39,7 @@ async function loader(
       nextPage: undefined,
       previousPage: undefined,
       currentPage: 1,
+      records: rawProducts.pagination_data.total_results,
     },
     sortOptions: [],
   };
