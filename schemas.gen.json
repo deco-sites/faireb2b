@@ -49,6 +49,7 @@
               "$live/loaders/workflows/events.ts",
               "$live/loaders/workflows/get.ts",
               "deco-sites/faireb2b/loaders/faireBrandPage.ts",
+              "deco-sites/faireb2b/loaders/faireSearchBrandPage.tsx",
               "deco-sites/std/loaders/nuvemShop/nuvemShopProductDetailsPage.ts",
               "deco-sites/std/loaders/nuvemShop/nuvemShopProductList.ts",
               "deco-sites/std/loaders/nuvemShop/nuvemShopProductListingPage.ts",
@@ -2539,6 +2540,27 @@
           }
         },
         {
+          "title": "Faire - Search Brand Page",
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlU2VhcmNoQnJhbmRQYWdlLnRzeA==@Props"
+            }
+          ],
+          "required": [
+            "__resolveType"
+          ],
+          "properties": {
+            "__resolveType": {
+              "type": "string",
+              "enum": [
+                "deco-sites/faireb2b/loaders/faireSearchBrandPage.tsx"
+              ],
+              "default": "deco-sites/faireb2b/loaders/faireSearchBrandPage.tsx"
+            }
+          }
+        },
+        {
           "title": "NuvemShop - Product Listing page",
           "description": "Useful for category, search, brand and collection pages.",
           "type": "object",
@@ -4290,6 +4312,25 @@
         "slug"
       ],
       "title": "deco-sites/faireb2b/loaders/faireBrandPage.ts@Props"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlU2VhcmNoQnJhbmRQYWdlLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "slug": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL3JlcXVlc3RUb1BhcmFtLnRz@RequestURLParam",
+          "title": "Slug"
+        },
+        "items": {
+          "type": "number",
+          "description": "total number of items to display",
+          "title": "Items"
+        }
+      },
+      "required": [
+        "slug",
+        "items"
+      ],
+      "title": "deco-sites/faireb2b/loaders/faireSearchBrandPage.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdERldGFpbHNQYWdlLnRz@Props": {
       "type": "object",
@@ -8158,10 +8199,15 @@
         "page": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@FaireBrand|null",
           "title": "Page"
+        },
+        "brandProducts": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ProductListingPage|null",
+          "title": "Brand Products"
         }
       },
       "required": [
-        "page"
+        "page",
+        "brandProducts"
       ],
       "title": "deco-sites/faireb2b/components/brand/BrandDetailsPage.tsx@Props"
     },
@@ -14454,6 +14500,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlU2VhcmNoQnJhbmRQYWdlLnRzeA==": {
+      "title": "Faire - Search Brand Page",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlU2VhcmNoQnJhbmRQYWdlLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/faireb2b/loaders/faireSearchBrandPage.tsx"
+          ],
+          "default": "deco-sites/faireb2b/loaders/faireSearchBrandPage.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdERldGFpbHNQYWdlLnRz": {
       "title": "NuvemShop - PDP",
       "type": "object",
@@ -16897,6 +16964,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlQnJhbmRQYWdlLnRz"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlU2VhcmNoQnJhbmRQYWdlLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdERldGFpbHNQYWdlLnRz"

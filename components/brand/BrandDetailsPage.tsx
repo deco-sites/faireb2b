@@ -7,12 +7,15 @@ import { StarRating } from "$store/components/ui/StarRating.tsx";
 import Image from "deco-sites/std/components/Image.tsx";
 import BrandModal from "$store/islands/BrandModal.tsx";
 import OpenModalButton from "$store/islands/OpenModalButton.tsx";
+import BrandSearchProducts from "./BrandSearchProducts.tsx";
+import type { ProductListingPage } from "deco-sites/std/commerce/types.ts";
 
 export interface Props {
   page: LoaderReturnType<FaireBrand | null>;
+  brandProducts: LoaderReturnType<ProductListingPage | null>;
 }
 
-function BrandDetailsPage({ page }: Props) {
+function BrandDetailsPage({ page, brandProducts }: Props) {
   if (!page) {
     return <>Página de marca não encontrada</>;
   }
@@ -115,6 +118,7 @@ function BrandDetailsPage({ page }: Props) {
           </div>
           <div class="flex">
             {/* AQUI VAI OS PRODUTOS COM O LOADER DE PRODUTOS */}
+            <BrandSearchProducts page={brandProducts} />
           </div>
           <div class=" sm:hidden">
             <div class="flex justify-center items-center gap-4 pt-8 pb-6">

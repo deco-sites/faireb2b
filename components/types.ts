@@ -1233,3 +1233,170 @@ export interface HrefLang {
   href: string;
   hreflang: string;
 }
+
+export interface FaireSearchResultBrandV2 {
+  request_id: string;
+  pagination_data: PaginationData;
+  currently_selected_category: CurrentlySelectedCategory;
+  should_show_vertical_image: boolean;
+  product_tiles: ProductTile[];
+  filter_sections: FilterSection[];
+  products: unknown[];
+  products_per_category: ProductsPerCategory;
+  product_categories_display_order: unknown[];
+  products_per_category_path_identifier: ProductsPerCategoryPathIdentifier;
+  seasonal_products_per_category_path_identifiers: unknown[];
+  badges: Badges;
+}
+
+export interface PaginationData {
+  page_number: number;
+  page_size: number;
+  page_count: number;
+  total_results: number;
+}
+
+export interface CurrentlySelectedCategory {
+  category_name: string;
+}
+
+export interface ProductTile {
+  product: Product;
+  badge_list: BadgeList;
+  best_image: BestImage;
+  quick_add: QuickAdd;
+  min_option_retail_price: MinOptionRetailPrice;
+  has_active_brand_promo: boolean;
+  is_highlighted_product_for_promotional_event: boolean;
+  min_option_brand_code: string;
+  based_in_country: string;
+  show_location_badging: string;
+  has_free_shipping_reason: boolean;
+  images: Image[];
+  case_size_text?: string;
+}
+
+export interface Product {
+  token: string;
+  name: string;
+  brand_token: string;
+  is_new: boolean;
+  maker_best_seller: boolean;
+  per_style_min_order_quantity: number;
+  state: string;
+  description: string;
+  taxonomy_type: TaxonomyType;
+  preorderable: boolean;
+  board_tokens: unknown[];
+  promoted_by: unknown[];
+}
+
+export interface TaxonomyType {
+  token: string;
+  name: string;
+  group_name: string;
+  clean_name: string;
+  target_customer: string;
+  target_customer_display_name: string;
+}
+
+export interface BadgeList {
+  badges: Badge[];
+}
+
+export interface Badge {
+  priority: number;
+  type: string;
+  display_to_user: boolean;
+  style: Style;
+}
+
+export interface Style {
+  position: string;
+  badge_message: string;
+  badge_message_key: string;
+}
+
+export interface BestImage {
+  token: string;
+  width: number;
+  height: number;
+  sequence: number;
+  url: string;
+  type?: string;
+  tags: string[];
+}
+
+export interface QuickAdd {
+  quick_add_text: string;
+  mobile_quick_add_text: string;
+  quick_add_option?: QuickAddOption;
+}
+
+export interface QuickAddOption {
+  option_token: string;
+  option_unit_multiplier: number;
+  option_min_order_quantity: number;
+  option_available_units: number;
+}
+
+export interface MinOptionRetailPrice {
+  amount_cents: number;
+  currency: string;
+}
+
+export interface Image {
+  token: string;
+  width: number;
+  height: number;
+  sequence: number;
+  url: string;
+  type?: string;
+  tags: string[];
+}
+
+export interface FilterSection {
+  selection_type: string;
+  field_name: string;
+  display_name: string;
+  formatted_display_name: string;
+  short_display_name: string;
+  searchable: boolean;
+  field_function: string;
+  default_option_key: string;
+  pill_text: string;
+  options: Option[];
+  range_filters: unknown[];
+  option_groups: unknown[];
+}
+
+export interface Option {
+  key: string;
+  display_name: string;
+  global_display_name: string;
+  is_selected: boolean;
+  selection_state: string;
+  sub_options: SubOption[];
+  customizations: unknown[];
+  results_count?: number;
+  group_key?: string;
+}
+
+export interface SubOption {
+  key: string;
+  display_name: string;
+  global_display_name: string;
+  is_selected: boolean;
+  selection_state: string;
+  results_count: number;
+  group_key: string;
+  sub_options: unknown[];
+  customizations: unknown[];
+}
+
+// export interface ProductsPerCategory {}
+export type ProductsPerCategory = unknown;
+
+export type ProductsPerCategoryPathIdentifier = unknown;
+
+export type Badges = unknown;
