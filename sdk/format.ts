@@ -20,4 +20,7 @@ export const formatPrice = (
   price: number | undefined,
   currency = "BRL",
   locale = "pt-BR",
-) => price ? formatter(currency, locale).format(price) : null;
+) =>
+  price
+    ? formatter(currency, locale).format(price).replace(/(\.|,)00$/g, "")
+    : null;

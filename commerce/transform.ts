@@ -19,8 +19,7 @@ const toAdditionalProperty = (badges: Badge[]): PropertyValue[] => {
         const propertyValue: PropertyValue = {
           "@type": "PropertyValue",
           name: "badges",
-          value:
-            `${currentBadge?.style?.badge_message} | ${currentBadge?.style?.position}`,
+          value: `${currentBadge?.style?.badge_message}`,
           propertyID: currentBadge?.style?.badge_message_key,
         };
         acc.push(propertyValue);

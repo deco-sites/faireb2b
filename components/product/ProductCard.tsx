@@ -141,7 +141,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
         <a
           href={url && relative(url)}
           aria-label="view product"
-          class="contents"
+          class="contents relative"
         >
           <Image
             src={front.url!}
@@ -160,6 +160,11 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
             preload={preload}
             loading={preload ? "eager" : "lazy"}
             decoding="async"
+          />
+          <div
+            id="TransparencyOverlay"
+            class="w-full h-full absolute left-0 top-0 z-10 pointer-events-none"
+            style={{ background: "rgba(0, 0, 0, 0.02);" }}
           />
           {
             /* {(!l?.onMouseOver?.image ||
@@ -262,10 +267,17 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                     l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
                   } ${l?.hide.oldPrice ? "hidden" : ""}`}
                 >
-                  MSRP {formatPrice(listPrice, offers!.priceCurrency!)}
+                  {/* TO-DO -> Dependendo da versão /en, /pt,o valor apresentado muda */}
+                  MSRP {formatPrice(listPrice, offers!.priceCurrency!)?.replace(
+                    /(US|\s)/g,
+                    "",
+                  )}
                 </div>
                 <div class="text-primary text-sm  lining-nums tabular-nums tracking-[0.15px] whitespace-nowrap">
-                  MSRP {formatPrice(price, offers!.priceCurrency!)}
+                  MSRP {formatPrice(price, offers!.priceCurrency!)?.replace(
+                    /(US|\s)/g,
+                    "",
+                  )}
                 </div>
               </div>
               {l?.hide.installments
