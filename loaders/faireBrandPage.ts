@@ -10,9 +10,15 @@ async function loader(props: Props, req: Request): Promise<FaireBrand | null> {
   const { slug } = props;
 
   if (!slug) return null;
+  const headers = new Headers();
+  headers.set(
+    "x-faire-deco-access-token",
+    "81587abd-21f4-499f-aa0f-c61dc20e3f2e",
+  );
 
   const fetchData = await fetchAPI<FaireResponse>(
     `https://www.faire.com/brand/${slug}`,
+    { headers },
   );
 
   const {
