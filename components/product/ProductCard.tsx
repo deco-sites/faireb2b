@@ -7,6 +7,7 @@ import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 import { mapProductToAnalyticsItem } from "deco-sites/std/commerce/utils/productToAnalyticsItem.ts";
 import { SendEventOnClick } from "$store/sdk/analytics.tsx";
 import type { Product } from "deco-sites/std/commerce/types.ts";
+import Icon from "$store/components/ui/Icon.tsx";
 
 interface Props {
   product: Product;
@@ -273,11 +274,57 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                     "",
                   )}
                 </div>
-                <div class="text-primary text-sm  lining-nums tabular-nums tracking-[0.15px] whitespace-nowrap">
-                  MSRP {formatPrice(price, offers!.priceCurrency!)?.replace(
-                    /(US|\s)/g,
-                    "",
-                  )}
+                <div class="flex pb-1 items-center gap-2">
+                  <div class="text-primary text-sm  lining-nums tabular-nums tracking-[0.15px] whitespace-nowrap">
+                    MSRP {formatPrice(price, offers!.priceCurrency!)?.replace(
+                      /(US|\s)/g,
+                      "",
+                    )}
+                  </div>
+                  <div class="relative inline-flex items-center group">
+                    <Icon
+                      // class={"block rotate-[270deg]"}
+                      id="Lock"
+                      height={16}
+                      width={16}
+                      strokeWidth={1.5}
+                    />
+                    <div
+                      class="hidden group-hover:flex border-primary text-white bg-primary absolute top-0 left-2/4  z-10 p-6"
+                      style={{
+                        width: "220px",
+                        maxWidth: "80vw",
+                        transform:
+                          "translate(-50%, -100%) translateX(0px) translateY(-15px)",
+                      }}
+                    >
+                      <p class="text-sm text-primary font-medium tracking-[0.15px] lining-nums tabular-nums text-white">
+                        Sign up for Faire to unlock wholesale pricing
+                      </p>
+                      <div
+                        class=""
+                        style={{
+                          background: "inherit",
+                          position: "absolute",
+                          zIndex: -100,
+                          display: "block",
+                          width: "15px",
+                          height: "15px",
+                          left: "calc(50% + 0px)",
+                          bottom: "0px",
+                          transform: "translate(-50%, 50%) rotate(45deg)",
+                          borderStyle: "inherit",
+                          borderWidth: "inherit",
+                          borderRightColor: "inherit",
+                          borderBottomColor: "inherit",
+                          borderImage: "inherit",
+                          borderTopColor: "transparent",
+                          borderLeftColor: "transparent",
+                        }}
+                      />
+                      <div class="absolute left-0 -bottom-4 h-4 w-full" />
+                    </div>
+                  </div>
                 </div>
               </div>
               {l?.hide.installments

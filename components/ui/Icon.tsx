@@ -26,6 +26,7 @@ export type AvailableIcons =
   | "Logo"
   | "Logo320px"
   | "LogoInverse"
+  | "Lock"
   | "Minus"
   | "MapPin"
   | "MagnifyingGlass"

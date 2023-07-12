@@ -8588,6 +8588,11 @@
                   },
                   {
                     "type": "string",
+                    "const": "Lock",
+                    "default": "Lock"
+                  },
+                  {
+                    "type": "string",
                     "const": "Minus",
                     "default": "Minus"
                   },
@@ -10518,6 +10523,11 @@
             },
             {
               "type": "string",
+              "const": "Lock",
+              "default": "Lock"
+            },
+            {
+              "type": "string",
               "const": "Minus",
               "default": "Minus"
             },
@@ -11612,6 +11622,11 @@
               "type": "string",
               "const": "LogoInverse",
               "default": "LogoInverse"
+            },
+            {
+              "type": "string",
+              "const": "Lock",
+              "default": "Lock"
             },
             {
               "type": "string",

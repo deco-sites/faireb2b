@@ -1,9 +1,3 @@
-import Filters from "$store/components/search/Filters.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
-import SearchControls from "$store/islands/SearchControls.tsx";
-import { SendEventOnLoad } from "$store/sdk/analytics.tsx";
-import { mapProductToAnalyticsItem } from "deco-sites/std/commerce/utils/productToAnalyticsItem.ts";
-import { useOffer } from "$store/sdk/useOffer.ts";
 import ProductGallery from "../product/ProductGallery.tsx";
 import type { ProductListingPage } from "deco-sites/std/commerce/types.ts";
 
@@ -22,14 +16,14 @@ function NotFound() {
 function Result({
   page,
 }: Omit<Props, "page"> & { page: ProductListingPage }) {
-  const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
+  const { products, pageInfo } = page;
 
   return (
     <>
-      <div class="container px-4 sm:py-10">
+      <div class="container px-4 sm:py-10 sm:px-0">
         <div class="flex flex-row">
           <div class="flex-grow">
-            <ProductGallery products={products} />
+            <ProductGallery products={products} pageInfo={pageInfo} />
           </div>
         </div>
       </div>
