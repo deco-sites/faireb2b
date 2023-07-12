@@ -21,6 +21,7 @@ export type Props = JSX.IntrinsicElements["dialog"] & {
   loading?: "lazy" | "eager";
   hideHeader?: boolean;
   showButtonClose?: boolean;
+  sectionClass?: string;
   containerClass?: string;
   wrapperClass?: string;
 };
@@ -84,7 +85,9 @@ const Modal = ({
       onClose={onClose}
     >
       <section
-        class={`w-full h-full flex bg-transparent ${sectionStyles[mode]}`}
+        class={`w-full h-full flex bg-transparent ${sectionStyles[mode]} ${
+          props.sectionClass ?? ""
+        }`}
       >
         <div
           class={`bg-base-100 flex flex-col max-h-full relative ${

@@ -19,6 +19,7 @@ export type AvailableIcons =
   | "Facebook"
   | "FilterList"
   | "Globo"
+  | "Google"
   | "Heart"
   | "Instagram"
   | "Info"

@@ -1,6 +1,7 @@
 import type { LoaderReturnType } from "$live/types.ts";
 import type { FaireBrand } from "$store/components/types.ts";
-import ButtonSignUp from "$store/components/ui/ButtonSignUp.tsx";
+import ButtonSignUp from "$store/islands/ButtonSignUp.tsx";
+import LoginWrapperModal from "$store/islands/LoginWrapperModal.tsx";
 
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import { StarRating } from "$store/components/ui/StarRating.tsx";
@@ -12,7 +13,7 @@ import type { ProductListingPage } from "deco-sites/std/commerce/types.ts";
 
 export interface Props {
   page: LoaderReturnType<FaireBrand | null>;
-  brandProducts: LoaderReturnType<ProductListingPage | null>;
+  brandProducts?: LoaderReturnType<ProductListingPage | null>;
 }
 
 function BrandDetailsPage({ page, brandProducts }: Props) {
@@ -118,7 +119,7 @@ function BrandDetailsPage({ page, brandProducts }: Props) {
           </div>
           <div class="flex">
             {/* AQUI VAI OS PRODUTOS COM O LOADER DE PRODUTOS */}
-            <BrandSearchProducts page={brandProducts} />
+            {brandProducts && <BrandSearchProducts page={brandProducts} />}
           </div>
           <div class=" sm:hidden">
             <div class="flex justify-center items-center gap-4 pt-8 pb-6">
@@ -171,6 +172,7 @@ function BrandDetailsPage({ page, brandProducts }: Props) {
           </div>
         </div>
         <BrandModal modalStory={page.modalStory} name={page.name} />
+        <LoginWrapperModal />
       </div>
       {/* {JSON.stringify(page)} */}
     </div>

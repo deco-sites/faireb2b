@@ -69,9 +69,11 @@
               "deco-sites/std/loaders/vtex/wishlist.ts",
               "./islands/AddToCartButton.tsx",
               "./islands/BrandModal.tsx",
+              "./islands/ButtonSignUp.tsx",
               "./islands/HeaderButton.tsx",
               "./islands/HeaderModals.tsx",
               "./islands/HeaderSearchbar.tsx",
+              "./islands/LoginWrapperModal.tsx",
               "./islands/Newsletter.tsx",
               "./islands/OpenModalButton.tsx",
               "./islands/OutOfStock.tsx",
@@ -8207,8 +8209,7 @@
         }
       },
       "required": [
-        "page",
-        "brandProducts"
+        "page"
       ],
       "title": "deco-sites/faireb2b/components/brand/BrandDetailsPage.tsx@Props"
     },
@@ -8550,6 +8551,11 @@
                     "type": "string",
                     "const": "Globo",
                     "default": "Globo"
+                  },
+                  {
+                    "type": "string",
+                    "const": "Google",
+                    "default": "Google"
                   },
                   {
                     "type": "string",
@@ -10488,6 +10494,11 @@
             },
             {
               "type": "string",
+              "const": "Google",
+              "default": "Google"
+            },
+            {
+              "type": "string",
               "const": "Heart",
               "default": "Heart"
             },
@@ -11587,6 +11598,11 @@
               "type": "string",
               "const": "Globo",
               "default": "Globo"
+            },
+            {
+              "type": "string",
+              "const": "Google",
+              "default": "Google"
             },
             {
               "type": "string",
@@ -14925,6 +14941,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0J1dHRvblNpZ25VcC50c3g=": {
+      "title": "./islands/ButtonSignUp.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/ButtonSignUp.tsx"
+          ],
+          "default": "./islands/ButtonSignUp.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0hlYWRlckJ1dHRvbi50c3g=": {
       "title": "./islands/HeaderButton.tsx",
       "type": "object",
@@ -14970,6 +15002,22 @@
             "./islands/HeaderSearchbar.tsx"
           ],
           "default": "./islands/HeaderSearchbar.tsx"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL0xvZ2luV3JhcHBlck1vZGFsLnRzeA==": {
+      "title": "./islands/LoginWrapperModal.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/LoginWrapperModal.tsx"
+          ],
+          "default": "./islands/LoginWrapperModal.tsx"
         }
       }
     },
@@ -17071,6 +17119,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0JyYW5kTW9kYWwudHN4"
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0J1dHRvblNpZ25VcC50c3g="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlckJ1dHRvbi50c3g="
         },
         {
@@ -17078,6 +17129,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlclNlYXJjaGJhci50c3g="
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0xvZ2luV3JhcHBlck1vZGFsLnRzeA=="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL05ld3NsZXR0ZXIudHN4"
