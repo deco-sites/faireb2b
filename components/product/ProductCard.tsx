@@ -281,7 +281,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                       "",
                     )}
                   </div>
-                  <div class="relative inline-flex items-center group">
+                  <div class="relative inline-flex items-center group-lock">
                     <Icon
                       // class={"block rotate-[270deg]"}
                       id="Lock"
@@ -290,7 +290,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                       strokeWidth={1.5}
                     />
                     <div
-                      class="hidden group-hover:flex border-primary text-white bg-primary absolute top-0 left-2/4  z-10 p-6"
+                      class="hidden group-lock-item border-primary text-white bg-primary absolute top-0 left-2/4  z-10 p-6 cursor-pointer"
                       style={{
                         width: "220px",
                         maxWidth: "80vw",
@@ -298,7 +298,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                           "translate(-50%, -100%) translateX(0px) translateY(-15px)",
                       }}
                     >
-                      <p class="text-sm text-primary font-medium tracking-[0.15px] lining-nums tabular-nums text-white">
+                      <p class="text-sm font-medium tracking-[0.15px] lining-nums tabular-nums text-white">
                         Sign up for Faire to unlock wholesale pricing
                       </p>
                       <div

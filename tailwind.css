@@ -36,6 +36,11 @@
       display: none;
     }
   }
+
+  /* Custom group hover icon lock product */
+  .group-lock:hover .group-lock-item {
+    display: flex;
+  } 
 }
 
 
