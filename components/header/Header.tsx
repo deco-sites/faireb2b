@@ -174,7 +174,6 @@ export interface FeaturedLinks {
   /**
    * @title Onde este item deve aparecer?
    * @description Esses campos são usados em três lugares no mobile e uma no desk, aqui você escolhe em quais blocos ele deve aparecer e se deve aparecer somente no mobile
-   * @default ArrowRight
    */
   visible: {
     top?: boolean;

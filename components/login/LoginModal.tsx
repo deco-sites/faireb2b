@@ -6,12 +6,12 @@ export default function LoginModal() {
       <div class="flex flex-col items-center justify-center flex-1">
         <Icon id="Logo" width={104} height={13} class="mb-4" />
         <h4
-          class="text-3xl text-primary font-normal lining-nums tabular-nums text-center mb-2"
+          class="text-3xl font-nantes text-primary font-normal lining-nums tabular-nums text-center mb-2"
           style={{ lineHeight: "38px" }}
         >
           Shop wholesale, online
         </h4>
-        <p class="text-sm font-nantes text-primary font-extralight tracking-[0.15px] lining-nums tabular-nums text-center mb-8">
+        <p class="text-sm text-primary font-extralight tracking-[0.15px] lining-nums tabular-nums text-center mb-8">
           Purchase from over 100,000 unique vendors. Sign up for free!
         </p>
         <div

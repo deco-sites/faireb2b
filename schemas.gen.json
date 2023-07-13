@@ -102,6 +102,7 @@
               "deco-sites/faireb2b/sections/Content/Benefits.tsx",
               "deco-sites/faireb2b/sections/Content/Faq.tsx",
               "deco-sites/faireb2b/sections/Content/Logos.tsx",
+              "deco-sites/faireb2b/sections/Content/SectionHero.tsx",
               "deco-sites/faireb2b/sections/Content/Testimonials.tsx",
               "deco-sites/faireb2b/sections/DesignSystem/DesignSystem.tsx",
               "deco-sites/faireb2b/sections/Footer/Footer.tsx",
@@ -8514,6 +8515,11 @@
                   },
                   {
                     "type": "string",
+                    "const": "Confirmation",
+                    "default": "Confirmation"
+                  },
+                  {
+                    "type": "string",
                     "const": "Deco",
                     "default": "Deco"
                   },
@@ -8983,6 +8989,44 @@
       },
       "required": [],
       "title": "deco-sites/faireb2b/sections/Content/Logos.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9Db250ZW50L1NlY3Rpb25IZXJvLnRzeA==@ListText": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        }
+      },
+      "required": [
+        "label"
+      ],
+      "title": "ListText"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9Db250ZW50L1NlY3Rpb25IZXJvLnRzeA==@ListText[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9Db250ZW50L1NlY3Rpb25IZXJvLnRzeA==@ListText"
+      },
+      "title": "ListText[]"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9Db250ZW50L1NlY3Rpb25IZXJvLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "listText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9Db250ZW50L1NlY3Rpb25IZXJvLnRzeA==@ListText[]",
+          "title": "List Text"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/faireb2b/sections/Content/SectionHero.tsx@Props"
     },
     "ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9Db250ZW50L1Rlc3RpbW9uaWFscy50c3g=@Testimonial": {
       "type": "object",
@@ -10422,6 +10466,11 @@
             },
             {
               "type": "string",
+              "const": "Confirmation",
+              "default": "Confirmation"
+            },
+            {
+              "type": "string",
               "const": "Deco",
               "default": "Deco"
             },
@@ -10655,8 +10704,7 @@
           },
           "required": [],
           "title": "Onde este item deve aparecer?",
-          "description": "Esses campos são usados em três lugares no mobile e uma no desk, aqui você escolhe em quais blocos ele deve aparecer e se deve aparecer somente no mobile",
-          "default": "ArrowRight"
+          "description": "Esses campos são usados em três lugares no mobile e uma no desk, aqui você escolhe em quais blocos ele deve aparecer e se deve aparecer somente no mobile"
         }
       },
       "required": [
@@ -11526,6 +11574,11 @@
               "type": "string",
               "const": "CreditCard",
               "default": "CreditCard"
+            },
+            {
+              "type": "string",
+              "const": "Confirmation",
+              "default": "Confirmation"
             },
             {
               "type": "string",
@@ -15536,6 +15589,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9Db250ZW50L1NlY3Rpb25IZXJvLnRzeA==": {
+      "title": "deco-sites/faireb2b/sections/Content/SectionHero.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9Db250ZW50L1NlY3Rpb25IZXJvLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/faireb2b/sections/Content/SectionHero.tsx"
+          ],
+          "default": "deco-sites/faireb2b/sections/Content/SectionHero.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9Db250ZW50L1Rlc3RpbW9uaWFscy50c3g=": {
       "title": "deco-sites/faireb2b/sections/Content/Testimonials.tsx",
       "type": "object",
@@ -17208,6 +17282,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9Db250ZW50L0xvZ29zLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9Db250ZW50L1NlY3Rpb25IZXJvLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9Db250ZW50L1Rlc3RpbW9uaWFscy50c3g="

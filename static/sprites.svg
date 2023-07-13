@@ -104,7 +104,7 @@
 		<path fill-rule="evenodd" clip-rule="evenodd" d="M40.2424 10.2684L42.6128 21.9066H39.891L39.5396 20.2061H35.7635L35.1501 21.9066H32.0769L36.4663 11.1637C36.642 10.6268 37.1691 10.2684 37.6962 10.2684H40.2424ZM39.0122 17.7887L38.1353 13.4025L36.554 17.7887H39.0122Z"/>
 	</symbol>
 
-	<symbol class="aSVGIcon__StyledSvg-sc-6bkwzg-0 adLSebk aArrow__DirectionalIcon-sc-1w0vbei-0 afkozkt" viewBox="0 0 24 24" direction="right" fill="none" color="#FFF" id="ArrowRight" xmlns="http://www.w3.org/2000/svg"
+	<symbol class="aSVGIcon__StyledSvg-sc-6bkwzg-0 adLSebk aArrow__DirectionalIcon-sc-1w0vbei-0 afkozkt" viewBox="0 0 24 24" direction="right" fill="none" id="ArrowRight" xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink">
 	<path d="M.857 12h22.286M17.143 18l6-6-6-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
@@ -128,6 +128,9 @@
 		<path d="M10.213 3.958c1.475 0 2.791.509 3.833 1.5l2.85-2.85C15.17.992 12.912 0 10.212 0 6.305 0 2.93 2.25 1.289 5.517l3.316 2.575c.792-2.375 3-4.134 5.609-4.134Z" fill="#EA4335"/>
 	</symbol>
 
+	<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" color="#FFF" id="Confirmation">
+	<path d="m.857 14.655 4.687 6.028a1.715 1.715 0 0 0 2.674.04L23.143 2.654" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+	</symbol>
 </svg>
 
 

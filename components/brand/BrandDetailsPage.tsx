@@ -82,7 +82,7 @@ function BrandDetailsPage({ page, brandProducts }: Props) {
               dangerouslySetInnerHTML={{ __html: page.profileDescription }}
             />
             <div class="mt-6 mb-8 sm:mb-0">
-              <ButtonSignUp />
+              <ButtonSignUp variant="default" />
             </div>
             <div
               class="sm:!w-[228px] my-8 sm:my-10"

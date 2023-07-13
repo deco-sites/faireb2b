@@ -165,6 +165,7 @@ function Menu({ items, featuredLinks, navDepartamentsMobile }: Props) {
                   width={16}
                   height={16}
                   strokeWidth={1.5}
+                  class="text-white"
                 />
               </a>
             </li>

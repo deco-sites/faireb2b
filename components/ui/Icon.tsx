@@ -11,6 +11,7 @@ export type AvailableIcons =
   | "ChevronDown"
   | "ChevronDirectional"
   | "CreditCard"
+  | "Confirmation"
   | "Deco"
   | "Diners"
   | "Discord"
