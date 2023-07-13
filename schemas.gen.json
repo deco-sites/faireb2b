@@ -8994,24 +8994,6 @@
           ],
           "title": "Text"
         },
-        "image": {
-          "type": "object",
-          "properties": {
-            "src": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-              "title": "Src"
-            },
-            "alt": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Alt"
-            }
-          },
-          "required": [],
-          "title": "Image"
-        },
         "user": {
           "type": "object",
           "properties": {
@@ -9026,19 +9008,12 @@
               ],
               "title": "Name"
             },
-            "position": {
+            "description": {
               "type": [
                 "string",
                 "null"
               ],
-              "title": "Position"
-            },
-            "company": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Company"
+              "title": "Description"
             }
           },
           "required": [],
@@ -9064,13 +9039,6 @@
             "null"
           ],
           "title": "Title"
-        },
-        "description": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Description"
         },
         "testimonials": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9Db250ZW50L1Rlc3RpbW9uaWFscy50c3g=@Testimonial[]",

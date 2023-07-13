@@ -29,6 +29,13 @@
     overflow: hidden;
     height: 100vh;
   }
+
+  /* String HTML contains br tag that must be hidden on mobile  */
+  @media (max-width: 768px) {
+    .hide-brtag-on-mob br {
+      display: none;
+    }
+  }
 }
 
 

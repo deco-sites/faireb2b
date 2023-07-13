@@ -22,7 +22,7 @@ function BrandDetailsPage({ page, brandProducts }: Props) {
   }
 
   return (
-    <div class="w-full">
+    <div class="w-full mb-10">
       <div
         class="py-3 px-4 md:px-6 w-full m-auto"
         style={{ maxWidth: "1700px" }}
