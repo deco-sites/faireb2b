@@ -48,6 +48,7 @@
               "$live/loaders/state.ts",
               "$live/loaders/workflows/events.ts",
               "$live/loaders/workflows/get.ts",
+              "deco-sites/faireb2b/loaders/faireBrandList.ts",
               "deco-sites/faireb2b/loaders/faireBrandPage.ts",
               "deco-sites/faireb2b/loaders/faireSearchBrandPage.tsx",
               "deco-sites/std/loaders/nuvemShop/nuvemShopProductDetailsPage.ts",
@@ -2544,6 +2545,27 @@
           }
         },
         {
+          "title": "Faire - Custom Brands",
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlQnJhbmRMaXN0LnRz@Props"
+            }
+          ],
+          "required": [
+            "__resolveType"
+          ],
+          "properties": {
+            "__resolveType": {
+              "type": "string",
+              "enum": [
+                "deco-sites/faireb2b/loaders/faireBrandList.ts"
+              ],
+              "default": "deco-sites/faireb2b/loaders/faireBrandList.ts"
+            }
+          }
+        },
+        {
           "title": "Faire - Search Brand Page",
           "type": "object",
           "allOf": [
@@ -3990,6 +4012,50 @@
         "id"
       ],
       "title": "deco-cx/live/loaders/workflows/get.ts@Props"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
+      "type": "string",
+      "format": "image-uri",
+      "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlQnJhbmRMaXN0LnRz@Brand": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        }
+      },
+      "required": [
+        "name",
+        "href",
+        "image"
+      ],
+      "title": "{{{name}}}"
+    },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlQnJhbmRMaXN0LnRz@Props": {
+      "type": "object",
+      "properties": {
+        "brands": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlQnJhbmRMaXN0LnRz@Brand"
+          },
+          "title": "Brands"
+        }
+      },
+      "required": [
+        "brands"
+      ],
+      "title": "deco-sites/faireb2b/loaders/faireBrandList.ts@Props"
     },
     "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3R5cGVzLnRz@ProfileImage": {
       "type": "object",
@@ -8213,11 +8279,6 @@
         "page"
       ],
       "title": "deco-sites/faireb2b/components/brand/BrandDetailsPage.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
-      "type": "string",
-      "format": "image-uri",
-      "title": "Image"
     },
     "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL3VpL0NhdGVnb3J5QmFubmVyLnRzeA==@Banner": {
       "type": "object",
@@ -14574,6 +14635,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlQnJhbmRMaXN0LnRz": {
+      "title": "Faire - Custom Brands",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlQnJhbmRMaXN0LnRz@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/faireb2b/loaders/faireBrandList.ts"
+          ],
+          "default": "deco-sites/faireb2b/loaders/faireBrandList.ts"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlQnJhbmRQYWdlLnRz": {
       "title": "deco-sites/faireb2b/loaders/faireBrandPage.ts",
       "type": "object",
@@ -17126,6 +17208,9 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvbG9hZGVycy93b3JrZmxvd3MvZ2V0LnRz"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlQnJhbmRMaXN0LnRz"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9sb2FkZXJzL2ZhaXJlQnJhbmRQYWdlLnRz"

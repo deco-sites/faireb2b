@@ -250,7 +250,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                 )}
             </div>
           )}
-        {l?.hide.allPrices
+        {true
           ? (
             ""
           )
