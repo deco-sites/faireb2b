@@ -23,7 +23,11 @@ function Result({
       <div class="container px-4 sm:py-10 sm:px-0">
         <div class="flex flex-row">
           <div class="flex-grow">
-            <ProductGallery products={products} pageInfo={pageInfo} />
+            <ProductGallery
+              products={products}
+              pageInfo={pageInfo}
+              hidePrices={false}
+            />
           </div>
         </div>
       </div>

@@ -10,9 +10,10 @@ export interface Columns {
 export interface Props {
   products: Product[] | null;
   pageInfo?: ProductListingPage["pageInfo"];
+  hidePrices?: boolean;
 }
 
-function ProductGallery({ products, pageInfo }: Props) {
+function ProductGallery({ products, pageInfo, hidePrices = true }: Props) {
   const layoutOptions = {
     basics: {
       contentAlignment: "Left" as const,
@@ -22,6 +23,7 @@ function ProductGallery({ products, pageInfo }: Props) {
       favoriteIcon: "Top right" as const,
     },
     hide: {
+      allPrices: hidePrices,
       productDescription: true,
       installments: true,
       skuSelector: true,
