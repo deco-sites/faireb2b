@@ -3,8 +3,9 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import { DecoManifest } from "$live/types.ts";
-import * as $$$0 from "./loaders/faireBrandPage.ts";
-import * as $$$1 from "./loaders/faireSearchBrandPage.tsx";
+import * as $$$0 from "./loaders/faireBrandList.ts";
+import * as $$$1 from "./loaders/faireBrandPage.ts";
+import * as $$$2 from "./loaders/faireSearchBrandPage.tsx";
 import * as $$$$0 from "./routes/styles.css.ts";
 import * as $$$$1 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/AddToCartButton.tsx";
@@ -179,8 +180,9 @@ const manifest = {
     "$live/loaders/state.ts": i2$$$0,
     "$live/loaders/workflows/events.ts": i2$$$1,
     "$live/loaders/workflows/get.ts": i2$$$2,
-    "deco-sites/faireb2b/loaders/faireBrandPage.ts": $$$0,
-    "deco-sites/faireb2b/loaders/faireSearchBrandPage.tsx": $$$1,
+    "deco-sites/faireb2b/loaders/faireBrandList.ts": $$$0,
+    "deco-sites/faireb2b/loaders/faireBrandPage.ts": $$$1,
+    "deco-sites/faireb2b/loaders/faireSearchBrandPage.tsx": $$$2,
     "deco-sites/std/loaders/nuvemShop/nuvemShopProductDetailsPage.ts": i2$$$3,
     "deco-sites/std/loaders/nuvemShop/nuvemShopProductList.ts": i2$$$4,
     "deco-sites/std/loaders/nuvemShop/nuvemShopProductListingPage.ts": i2$$$5,
