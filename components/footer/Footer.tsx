@@ -259,7 +259,7 @@ function Footer({
         )}
         {layout?.variation == "Variation 4" && (
           <div class="flex flex-col justify-center">
-            <div class="flex flex-col lg:flex-row lg:justify-between items-start lg:max-w-[1440px] lg:mb-[72px] w-full lg:px-24">
+            <div class="flex flex-col lg:flex-row lg:justify-between items-start lg:max-w-[1440px] lg:mb-[72px] w-full lg:px-24 mx-auto">
               {_sectionLinks}
               <div class="flex flex-col lg:w-2/5 lg:pl-10">
                 <div class="flex flex-col md:flex-row gap-10 lg:gap-20">
@@ -274,7 +274,7 @@ function Footer({
               </div>
             </div>
             <Divider />
-            <div class="flex flex-col md:flex-row md:justify-between gap-10 lg:max-w-[1440px] lg:py-6 lg:pb-8 lg:px-24 w-full">
+            <div class="flex flex-col md:flex-row md:justify-between gap-10 lg:max-w-[1440px] lg:py-6 lg:pb-8 lg:px-24 w-full mx-auto">
               <PoweredBy {...poweredBy} />
               {_region}
             </div>
