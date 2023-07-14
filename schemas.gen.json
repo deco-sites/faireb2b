@@ -9089,14 +9089,16 @@
       "required": [],
       "title": "deco-sites/faireb2b/sections/Content/SectionHero.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML": {
+      "type": "string",
+      "format": "html",
+      "title": "HTML"
+    },
     "ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9Db250ZW50L1Rlc3RpbW9uaWFscy50c3g=@Testimonial": {
       "type": "object",
       "properties": {
         "text": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
           "title": "Text"
         },
         "user": {
@@ -9107,17 +9109,11 @@
               "title": "Avatar"
             },
             "name": {
-              "type": [
-                "string",
-                "null"
-              ],
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
               "title": "Name"
             },
             "description": {
-              "type": [
-                "string",
-                "null"
-              ],
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
               "title": "Description"
             }
           },
@@ -11922,11 +11918,6 @@
       },
       "required": [],
       "title": "deco-sites/faireb2b/sections/Links/Shortcuts.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML": {
-      "type": "string",
-      "format": "html",
-      "title": "HTML"
     },
     "ZGVjby1zaXRlcy9mYWlyZWIyYi9zZWN0aW9ucy9NaXNjZWxsYW5lb3VzL0NhbXBhaWduVGltZXIudHN4@Props": {
       "type": "object",

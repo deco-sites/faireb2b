@@ -5,19 +5,21 @@ import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { useId } from "preact/hooks";
 import type { Image as ImageType } from "deco-sites/std/components/types.ts";
+import type { HTML } from "deco-sites/std/components/types.ts";
+import Markdown from "$store/components/ui/Markdown.tsx";
 
 export interface Testimonial {
-  text?: string;
+  text?: HTML;
   // image?: {
   //   src?: ImageType;
   //   alt?: string;
   // };
   user?: {
     avatar?: ImageType;
-    name?: string;
+    name?: HTML;
     // position?: string;
     // company?: string;
-    description?: string;
+    description?: HTML;
   };
 }
 
@@ -102,7 +104,7 @@ const Testimonal = ({ text, user }: Testimonial) => (
       {user?.description &&
         (
           <p class="text-sm text-primary font-extralight tracking-[0.15px] lining-nums tabular-nums text-center">
-            {user?.description}
+            <Markdown text={user?.description} />
           </p>
         )}
     </div>
@@ -122,7 +124,7 @@ export default function Testimonials(
     <div class="w-full py-10 flex flex-col sm:py-20 bg-secondary-content">
       {title && (
         <p class="text-sm text-neutral font-extralight tracking-[0.15px] lining-nums tabular-nums text-center uppercase mb-6">
-          {title}
+          <Markdown text={title} />
         </p>
       )}
       {layout?.variation === "Grid" && (
