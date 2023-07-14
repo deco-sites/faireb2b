@@ -9650,6 +9650,20 @@
     "ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL2Zvb3Rlci9Gb290ZXIudHN4@MobileApps": {
       "type": "object",
       "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "text": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Text"
+        },
         "apple": {
           "type": [
             "string",
@@ -9658,6 +9672,11 @@
           "description": "Link to the app",
           "title": "Apple"
         },
+        "qrcodeImageApple": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "QR Code Apple",
+          "title": "Qrcode Image Apple"
+        },
         "android": {
           "type": [
             "string",
@@ -9665,6 +9684,11 @@
           ],
           "description": "Link to the app",
           "title": "Android"
+        },
+        "qrcodeImageAndroid": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "QR Code Android",
+          "title": "Qrcode Image Android"
         }
       },
       "required": [],
@@ -9945,6 +9969,24 @@
         "layout": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL2Zvb3Rlci9Gb290ZXIudHN4@Layout",
           "title": "Layout"
+        },
+        "poweredBy": {
+          "type": "object",
+          "properties": {
+            "disclaimer": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Disclaimer"
+            },
+            "items": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9mYWlyZWIyYi9jb21wb25lbnRzL2Zvb3Rlci9Gb290ZXIudHN4@Item[]",
+              "title": "Items"
+            }
+          },
+          "required": [],
+          "title": "Powered By"
         }
       },
       "required": [],

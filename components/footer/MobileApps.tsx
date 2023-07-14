@@ -1,14 +1,40 @@
 import Icon from "$store/components/ui/Icon.tsx";
+import Image from "deco-sites/std/components/Image.tsx";
 
-export default function MobileApps(
-  { content }: { content: { apple?: string; android?: string } },
-) {
+export default function MobileApps({
+  content,
+}: {
+  content: {
+    title?: string;
+    text?: string;
+    apple?: string;
+    qrcodeImageApple?: string;
+    android?: string;
+    qrcodeImageAndroid?: string;
+  };
+}) {
   return (
     <>
+      <div class="mb-4">
+        <h4
+          class="text-primary font-nantes font-normal lining-nums tabular-nums mb-2"
+          style={{ fontSize: "1.375rem" }}
+        >
+          {content.title ?? "Get the Faire app"}
+        </h4>
+        <p class="text-sm text-primary font-extralight tracking-[0.15px] lining-nums tabular-nums">
+          {content.text ??
+            "Shop on the go, message brands, and track orders with the Faire app."}
+        </p>
+      </div>
       {(content?.apple || content?.android) && (
         <div class="flex gap-2">
           {content?.apple && (
-            <a href={content?.apple} target="_blank">
+            <a
+              href={content?.apple}
+              target="_blank"
+              class="group relative hover:rounded-tl-lg hover:rounded-tr-lg hover:bg-primary"
+            >
               <svg
                 width="135"
                 height="40"
@@ -113,10 +139,25 @@ export default function MobileApps(
                   fill="white"
                 />
               </svg>
+              {content.qrcodeImageApple && (
+                <div class="absolute z-10 bg-primary rounded-bl-lg rounded-br-lg p-3 hidden group-hover:flex w-full">
+                  <Image
+                    class=""
+                    src={content.qrcodeImageApple}
+                    alt="QRCode App Apple"
+                    width={120}
+                    height={123}
+                  />
+                </div>
+              )}
             </a>
           )}
           {content?.android && (
-            <a href={content?.android} target="_blank">
+            <a
+              href={content?.android}
+              target="_blank"
+              class="group relative hover:rounded-tl-lg hover:rounded-tr-lg hover:bg-primary"
+            >
               <svg
                 width="135"
                 height="40"
@@ -156,6 +197,17 @@ export default function MobileApps(
                   stroke-miterlimit="10"
                 />
               </svg>
+              {content.qrcodeImageAndroid && (
+                <div class="absolute z-10 bg-primary rounded-bl-lg rounded-br-lg p-3 hidden group-hover:flex w-full">
+                  <Image
+                    class=""
+                    src={content.qrcodeImageAndroid}
+                    alt="QRCode App Android"
+                    width={120}
+                    height={123}
+                  />
+                </div>
+              )}
             </a>
           )}
         </div>

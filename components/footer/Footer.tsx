@@ -38,10 +38,16 @@ export interface PaymentItem {
 }
 
 export interface MobileApps {
+  title?: string;
+  text?: string;
   /** @description Link to the app */
   apple?: string;
+  /** @description QR Code Apple */
+  qrcodeImageApple?: LiveImage;
   /** @description Link to the app */
   android?: string;
+  /** @description QR Code Android */
+  qrcodeImageAndroid?: LiveImage;
 }
 
 export interface RegionOptions {
@@ -109,6 +115,10 @@ export interface Props {
     text?: string;
   };
   layout?: Layout;
+  poweredBy?: {
+    disclaimer?: string;
+    items?: Item[];
+  };
 }
 
 function Footer({
@@ -140,6 +150,7 @@ function Footer({
       backToTheTop: false,
     },
   },
+  poweredBy,
 }: Props) {
   const _logo = layout?.hide?.logo ? <></> : <Logo logo={logo} />;
   const _newsletter = layout?.hide?.newsletter ? <></> : (
@@ -174,11 +185,11 @@ function Footer({
 
   return (
     <footer
-      class={`w-full flex flex-col pt-10 pb-2 lg:pb-10 gap-10 ${
+      class={`w-full flex flex-col pt-10 pb-2 lg:mt-14 lg:p-0 gap-10 ${
         ColorClasses(layout)
       }`}
     >
-      <div class="lg:container mx-6 lg:mx-auto">
+      <div class="w-full">
         {(!layout?.variation || layout?.variation == "Variation 1") && (
           <div class="flex flex-col gap-10">
             <div class="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-12">
@@ -203,7 +214,7 @@ function Footer({
         {layout?.variation == "Variation 2" && (
           <div class="flex flex-col gap-10">
             <div class="flex flex-col md:flex-row gap-10">
-              <div class="flex flex-col gap-10 lg:w-1/2">
+              <div class="flex flex-col lg:w-1/2">
                 {_logo}
                 {_social}
                 {_payments}
@@ -247,12 +258,10 @@ function Footer({
           </div>
         )}
         {layout?.variation == "Variation 4" && (
-          <div class="flex flex-col gap-10">
-            {_newsletter}
-            {layout?.hide?.newsletter ? <></> : <Divider />}
-            <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 lg:justify-between">
+          <div class="flex flex-col justify-center">
+            <div class="flex flex-col lg:flex-row lg:justify-between items-start lg:max-w-[1440px] lg:mb-[72px] w-full lg:px-24">
               {_sectionLinks}
-              <div class="flex flex-col gap-10 lg:gap-10 lg:w-2/5 lg:pl-10">
+              <div class="flex flex-col lg:w-2/5 lg:pl-10">
                 <div class="flex flex-col md:flex-row gap-10 lg:gap-20">
                   <div class="flex-auto">
                     {_payments}
@@ -261,14 +270,13 @@ function Footer({
                     {_social}
                   </div>
                 </div>
-                {_region}
                 {_apps}
               </div>
             </div>
             <Divider />
-            <div class="flex flex-col md:flex-row md:justify-between gap-10 md:items-center">
-              {_logo}
-              <PoweredBy />
+            <div class="flex flex-col md:flex-row md:justify-between gap-10 lg:max-w-[1440px] lg:py-6 lg:pb-8 lg:px-24 w-full">
+              <PoweredBy {...poweredBy} />
+              {_region}
             </div>
           </div>
         )}

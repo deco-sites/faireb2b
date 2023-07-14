@@ -25,14 +25,17 @@ export default function FooterItems(
           >
             {sections.map((section) => (
               <li>
-                <div class="flex flex-col gap-2">
-                  <span class="font-medium text-lg">
+                <div class="flex flex-col gap-1">
+                  <span class="text-sm tracking-[0.15px] font-bold text-primary lining-nums tabular-nums ">
                     {section.label}
                   </span>
-                  <ul class={`flex flex-col gap-2 flex-wrap text-sm`}>
+                  <ul class={`flex flex-col gap-1 flex-wrap text-sm`}>
                     {section.items?.map((item) => (
                       <li>
-                        <a href={item.href} class="block py-1 link link-hover">
+                        <a
+                          href={item.href}
+                          class="block py-1 link link-hover text-sm tracking-[0.15px] font-extralight text-primary lining-nums tabular-nums "
+                        >
                           {item.label}
                         </a>
                       </li>
@@ -49,14 +52,19 @@ export default function FooterItems(
               <li>
                 <details>
                   <summary>
-                    <span class="pl-1 py-2">{section.label}</span>
+                    <span class="pl-1 py-2 text-sm tracking-[0.15px] font-bold text-primary lining-nums tabular-nums ">
+                      {section.label}
+                    </span>
                   </summary>
                   <ul
                     class={`flex flex-col gap-1 pl-5 pt-2`}
                   >
                     {section.items?.map((item) => (
                       <li>
-                        <a href={item.href} class="block py-1 link link-hover">
+                        <a
+                          href={item.href}
+                          class="block py-1 link link-hover text-sm tracking-[0.15px] font-extralight text-primary lining-nums tabular-nums "
+                        >
                           {item.label}
                         </a>
                       </li>
