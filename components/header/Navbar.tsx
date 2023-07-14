@@ -6,6 +6,9 @@ import { navbarHeight } from "./constants.ts";
 import type { INavItem } from "./NavItem.tsx";
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 
+function MockInputSearchUi() {
+}
+
 function Navbar({ items, searchbar }: {
   items: INavItem[];
   searchbar: SearchbarProps;
@@ -15,7 +18,7 @@ function Navbar({ items, searchbar }: {
       {/* Mobile Version */}
       <div
         style={{ height: navbarHeight }}
-        class="md:hidden flex flex-row justify-between items-center border-b border-base-200 w-full pl-2 pr-6 gap-2"
+        class="md:hidden flex flex-row justify-between items-center border-b border-base-200 w-full pl-2 pr-6 gap-2 sticky top-0 z-50 bg-base-100"
       >
         <Buttons variant="menu" />
 
@@ -35,38 +38,41 @@ function Navbar({ items, searchbar }: {
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden md:flex flex-row justify-between items-center border-b border-base-200 w-full pl-2 pr-6">
-        <div class="flex-none w-44">
-          <a href="/" aria-label="Store logo" class="block px-4 py-3 w-[160px]">
-            <Icon id="Logo" width={126} height={16} />
-          </a>
-        </div>
-        <div class="flex-auto flex justify-center">
-          {items.map((item) => <NavItem item={item} />)}
-        </div>
-        <div class="flex-none w-44 flex items-center justify-end gap-2">
-          <Buttons variant="search" />
-          <Searchbar searchbar={searchbar} />
-          <a
-            class="btn btn-circle btn-sm btn-ghost"
-            href="/login"
-            aria-label="Log in"
-          >
-            <Icon id="User" width={20} height={20} strokeWidth={0.4} />
-          </a>
-          <a
-            class="btn btn-circle btn-sm btn-ghost"
-            href="/wishlist"
-            aria-label="Wishlist"
-          >
-            <Icon
-              id="Heart"
-              size={20}
-              strokeWidth={2}
-              fill="none"
-            />
-          </a>
-          <Buttons variant="cart" />
+      <div class="hidden md:flex flex-row justify-between items-center border-b border-base-200 w-full pl-2 pr-6 sticky top-0 z-50 bg-base-100">
+        <div class="flex flex-row ">
+          <div class="flex-none w-44">
+            <a
+              href="/"
+              aria-label="Store logo"
+              class="block px-4 py-3 w-[160px]"
+            >
+              <Icon id="Logo" width={126} height={16} />
+            </a>
+          </div>
+          <div class="flex-none w-44 flex items-center justify-end gap-2">
+            {/* <Buttons variant="search" /> */}
+            {/* <Searchbar searchbar={searchbar} /> */}
+            <a
+              class="btn btn-circle btn-sm btn-ghost"
+              href="/login"
+              aria-label="Log in"
+            >
+              <Icon id="User" width={20} height={20} strokeWidth={0.4} />
+            </a>
+            <a
+              class="btn btn-circle btn-sm btn-ghost"
+              href="/wishlist"
+              aria-label="Wishlist"
+            >
+              <Icon
+                id="Heart"
+                size={20}
+                strokeWidth={2}
+                fill="none"
+              />
+            </a>
+            <Buttons variant="cart" />
+          </div>
         </div>
       </div>
     </>

@@ -81,7 +81,7 @@ export interface NavigationDepartamentDesktop {
    * @description Não é obrigatório caso não queira nenhum link em destaque
    */
   featured_links: {
-    name?: string;
+    label?: string;
     link_path?: string;
   }[];
   /**
@@ -232,9 +232,9 @@ function Header({
   const searchbar = { ..._searchbar, products, suggestions };
   return (
     <>
-      <header style={{ height: headerHeight }}>
+      <header class="contents">
         {/* <>{JSON.stringify(featuredLinks)}</> */}
-        <div class="bg-base-100 fixed w-full z-50">
+        <div class="bg-base-100 w-full z-50 contents">
           <Alert alerts={alerts} />
           <Navbar items={navItems} searchbar={searchbar} />
         </div>

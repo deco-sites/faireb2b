@@ -45,6 +45,10 @@
 
 
 @layer utilities {
+  [data-manifest-key*="Header.tsx"] {
+    @apply contents
+  }
+
 
   /** Remove scrollbar from overflow-auto */
   .scrollbar-none {

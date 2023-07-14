@@ -10236,12 +10236,12 @@
           "items": {
             "type": "object",
             "properties": {
-              "name": {
+              "label": {
                 "type": [
                   "string",
                   "null"
                 ],
-                "title": "Name"
+                "title": "Label"
               },
               "link_path": {
                 "type": [
